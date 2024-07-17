@@ -1,0 +1,134 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background-color: #FAF9F6;
+    font-family: 'Nunito', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+   width: 100%;
+   
+   
+    
+}
+.ui-pictures{
+    padding-top: 10pt;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.ui-pictures img{
+    max-width:33%;
+}
+/* Header Styles */
+header {
+    width:50%;
+    
+    color: #333;
+    padding: 1rem;
+    display: flex;
+    
+   justify-content: space-between;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+p{
+    font-size:1rem;
+}
+l{
+    font-size:0.5rem;
+}
+
+#hero p {
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+   padding: 1rem 0;
+   
+    
+}
+
+section {
+    padding:1rem;
+    color:#333;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#hero {
+
+   color:#333;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 0.5px solid #bbb;
+    padding-bottom: 0;
+}
+#hero:hover{
+    color:#ed0000;
+}
+#myQuilt{
+    border-radius: 20px;
+    
+}
+a{
+    text-decoration: none;
+    color: none;
+}
+#myQuilt:hover{
+    background-color: rgb(238, 236, 236);
+}
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+
+    max-width: 50%; /* Ensures the image is responsive */
+    height: auto; /* Maintains the aspect ratio */
+    display: block;
+   
+}
