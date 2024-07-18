@@ -100,9 +100,7 @@ section {
     border-bottom: 0.5px solid #bbb;
     padding-bottom: 0;
 }
-#hero:hover{
-    color:#ed0000;
-}
+
 #myQuilt{
     border-radius: 20px;
     
@@ -127,7 +125,7 @@ footer {
 
 img {
 
-    max-width: 50%; /* Ensures the image is responsive */
+    max-width: 100%; /* Ensures the image is responsive */
     height: auto; /* Maintains the aspect ratio */
     display: block;
    
