@@ -28,14 +28,35 @@ body {
     padding-top: 10pt;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
     
 }
+
+.case_study_content{
+    padding-top: 10pt;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    
+}
+
+.image_caption{
+    max-width:33%;
+    object-fit:contain;
+    padding: 1rem;
+}
+
+.image_caption p{
+    padding: auto;
+}
+
 .drumwave{
     margin: auto;
     width:80%;
 }
 .ui-pictures img{
     max-width:33%;
+    object-fit:contain;
 }
 /* Header Styles */
 header {
@@ -88,7 +109,7 @@ main {
 section {
     padding:1rem;
     color:#333;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
