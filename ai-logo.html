@@ -18,7 +18,7 @@
             <h1>Jake Sheiner</h1>
             <nav>
                 <ul>
-                    <a href="index.html" class="bi bi-arrow-left">Home</a>
+                    <a href="index.html" class="bi bi-arrow-left"> Home</a>
                    
                 </ul>
             </nav>
@@ -28,70 +28,45 @@
     <main>
         
         <section>
-            <a href="https://github.com/jakesheiner/myQuilt">check out the Github here</a>
+            
             <h2>My first experience leveraging AI to do design work.</h2>
-            <img src="images/Journal-App-Map.png" alt="myQuilt's initial diagram">
+            
             <p>
-                When tasked with creating variants for a logo with 128 colors in early 2023, I was able to automate the process using the new chatGPT bot.
+                At Dubberly Design I was working with a client called DrumWave, a brazilian data company. Their logo was a seven set venn diagram, with each set assigned a color, and each section was the average color of the overlapping sets. 
+            </p>
+            <p>
+                This results in 128 colors in the logo.
+
+            </p>
+            <p>
+                Originally the seven colors were mathematically calculated to evenly split the color wheel, but this resulted in them being not quite optically balanced.
+            </p>
+
+            <p>
+                So I was tasked with redrawing the logo with a  new set of optically balanced seven colors. To calculate the resulting averages by hand would have taken hours, and would need to be done for every iteration.
+            </p>
+            <p>
+                I knew this could be automated, so I turned to the then new chatGPT to figure out how. 
+            </p>
+            <p>
+                At first I had it create a python program to take in a set of seven hexcodes, and return the 128 average hex codes.
+
+            </p>
+            <p>
+                Then I had it return an svg of the 128 color palettes, so one could use the eyedropper tool to recolor the logo.
+            </p>
+            <p>
+                Finally I had it create a program that takes as an input 7 colors, calculates the 128 colors, and recolors a given svg file provided to it. This way I had fully automated the process of creating logo variations.
+
+            </p>
+            <p>
+                This was the first time I had used an LLM for something useful in the design process, and was a revelation for me and for the other designers at Dubberly Design.
+
             </p>
     </section>
-    <section>
-        <h2>The first version had a skeumorphic UI</h2>
-        <div class="ui-pictures">
-            <img src="images/first_entry.png" alt="the quilt view">
-           
-        </div>
-        <p>
-            The original version of the UI was skeumorphic, made to resemble a leatherbound journal with rough paper.
-        </p>
-    </section>
-
-    <section>
-    <div class="ui-pictures">
-        
-        <img src="images/paper_journal.png" alt="the quilt view">
-        <img src="images/paper_entry.png" alt="the quilt view">
-        <img src="images/original_grid.png" alt="the quilt view">
-        
-    </div>
-    <p>
-       In order to simplify the UI, the text entry page was replaced with a tray that slid up from the bottom.
-    </p>
-</section>
-<section>
-    <div class="ui-pictures">
-        
-            <img src="images/journal_tabs.png" alt="the quilt view">
-            <img src="images/text_entry.png" alt="the quilt view">
-            <img src="images/rectangle_grid.png" alt="the quilt view">
-            
-        </div>
-        <p>
-            I dropped the skeumorphic design in favor of a simple UI that emphasized the entries' colors. Also I updated the quilt view to be more pleasant and include the date and time of the entry.
-          </p>
-       
-        
-       
-        
-    </div>
-    
-    </section>
-    <section>
-    <div class="ui-pictures">
-        <img src="images/quilt_view.png" alt="the quilt view">
-        <img src="images/journal_view.png" alt="the quilt view">
-        <img src="images/text_entry.png" alt="the quilt view">
-        
-    </div>
-    <p>
-The final version of the app does away with the tab bar navigation. The grid cells in the quilt are now tapable, allowing the user to access the journal view, which keeps its swipable functionality. Additionally, AI image generation is now included to further sell the quilt theme. A prompt is generated from the entry, and is piped over to Dalle to generate the image.    
-</p>
-</section>
-</section>
+   
     </main>
 
-    <footer>
-        <l>&copy; 2024 portfolio</l>
-    </footer>
+    
 </body>
 </html>

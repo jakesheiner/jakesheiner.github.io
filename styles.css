@@ -53,9 +53,14 @@ body {
 .drumwave{
     margin: auto;
     width:80%;
-    margin-left:0;
+   
 }
 .ui-pictures img{
+    max-width:33%;
+    object-fit:contain;
+}
+
+.ui-pictures video{
     max-width:33%;
     object-fit:contain;
 }
