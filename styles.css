@@ -175,6 +175,10 @@ img {
    
 }
 
+.ai-logo img {
+    margin-bottom: 3rem;
+}
+
 
 @media only screen and (max-width: 800px) {
     main{
