@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 979.88 454.02">
+  <circle cx="152.47" cy="301.54" r="151.34" style="fill: none; stroke: #ed1c24; stroke-miterlimit: 10; stroke-width: 2.27px;"/>
+  <circle cx="267.02" cy="301.54" r="151.34" style="fill: none; stroke: #00a651; stroke-miterlimit: 10; stroke-width: 2.27px;"/>
+  <circle cx="152.47" cy="301.54" r="151.34" style="fill: #ed1c24; isolation: isolate; opacity: .1;"/>
+  <circle cx="267.02" cy="301.54" r="151.34" style="fill: #00a651; isolation: isolate; opacity: .1;"/>
+  <circle cx="152.47" cy="178.13" r="151.34" style="fill: none; stroke: #00aeef; stroke-miterlimit: 10; stroke-width: 2.27px;"/>
+  <circle cx="152.47" cy="178.13" r="151.34" style="fill: #00aeef; isolation: isolate; opacity: .1;"/>
+  <circle cx="273.78" cy="178.13" r="151.34" style="fill: none; stroke: #ec008c; stroke-miterlimit: 10; stroke-width: 2.27px;"/>
+  <circle cx="273.78" cy="178.13" r="151.34" style="fill: #ec008c; isolation: isolate; opacity: .1;"/>
+  <circle cx="655.75" cy="301.54" r="151.34" style="fill: none; stroke: #231f20; stroke-miterlimit: 10; stroke-width: 2.27px;"/>
+  <circle cx="770.28" cy="301.54" r="151.34" style="fill: none; stroke: #231f20; stroke-miterlimit: 10; stroke-width: 2.27px;"/>
+  <circle cx="655.75" cy="301.54" r="151.34" style="fill: none; isolation: isolate; opacity: .1; stroke: #231f20; stroke-miterlimit: 10;"/>
+  <circle cx="770.28" cy="301.54" r="151.34" style="fill: none; isolation: isolate; opacity: .1; stroke: #231f20; stroke-miterlimit: 10;"/>
+  <circle cx="655.75" cy="178.13" r="151.34" style="fill: none; stroke: #231f20; stroke-miterlimit: 10; stroke-width: 2.27px;"/>
+  <circle cx="655.75" cy="178.13" r="151.34" style="fill: none; isolation: isolate; opacity: .1; stroke: #231f20; stroke-miterlimit: 10;"/>
+  <circle cx="777.05" cy="178.13" r="151.34" style="fill: none; stroke: #231f20; stroke-miterlimit: 10; stroke-width: 2.27px;"/>
+  <circle cx="777.05" cy="178.13" r="151.34" style="fill: none; isolation: isolate; opacity: .1; stroke: #231f20; stroke-miterlimit: 10;"/>
+  <g style="fill: none; isolation: isolate;">
+    <text transform="translate(567.57 102.05)" style="fill: #231f20; font-family: UniversLTStd-Cn, &apos;Univers LT Std&apos;; font-size: 24px; isolation: isolate;"><tspan x="0" y="0">1000</tspan></text>
+  </g>
+  <g style="fill: none; isolation: isolate;">
+    <text transform="translate(698.8 102.05)" style="fill: #231f20; font-family: UniversLTStd-Cn, &apos;Univers LT Std&apos;; font-size: 24px; isolation: isolate;"><tspan x="0" y="0">1100</tspan></text>
+  </g>
+  <g style="fill: none; isolation: isolate;">
+    <text transform="translate(567.57 378.07)" style="fill: #231f20; font-family: UniversLTStd-Cn, &apos;Univers LT Std&apos;; font-size: 24px; isolation: isolate;"><tspan x="0" y="0">0010</tspan></text>
+  </g>
+  <g style="fill: none; isolation: isolate;">
+    <text transform="translate(698.8 378.07)" style="fill: #231f20; font-family: UniversLTStd-Cn, &apos;Univers LT Std&apos;; font-size: 24px; isolation: isolate;"><tspan x="0" y="0">0011</tspan></text>
+  </g>
+  <g style="fill: none; isolation: isolate;">
+    <text transform="translate(556.28 243.02)" style="fill: #231f20; font-family: UniversLTStd-Cn, &apos;Univers LT Std&apos;; font-size: 24px; isolation: isolate;"><tspan x="0" y="0">1010</tspan></text>
+  </g>
+  <g style="fill: none; isolation: isolate;">
+    <text transform="translate(633.22 183.51)" style="fill: #231f20; font-family: UniversLTStd-Cn, &apos;Univers LT Std&apos;; font-size: 24px; isolation: isolate;"><tspan x="0" y="0">1110</tspan></text>
+  </g>
+  <g style="fill: none; isolation: isolate;">
+    <text transform="translate(626.87 307.77)" style="fill: #231f20; font-family: UniversLTStd-Cn, &apos;Univers LT Std&apos;; font-size: 24px; isolation: isolate;"><tspan x="0" y="0">1011</tspan></text>
+  </g>
+  <g style="fill: none; isolation: isolate;">
+    <text transform="translate(759.44 307.77)" style="fill: #231f20; font-family: UniversLTStd-Cn, &apos;Univers LT Std&apos;; font-size: 24px; isolation: isolate;"><tspan x="0" y="0">0111</tspan></text>
+  </g>
+  <g style="fill: none; isolation: isolate;">
+    <text transform="translate(759.44 183.51)" style="fill: #231f20; font-family: UniversLTStd-Cn, &apos;Univers LT Std&apos;; font-size: 24px; isolation: isolate;"><tspan x="0" y="0">1101</tspan></text>
+  </g>
+  <g style="fill: none; isolation: isolate;">
+    <text transform="translate(698.8 243.02)" style="fill: #231f20; font-family: UniversLTStd-Cn, &apos;Univers LT Std&apos;; font-size: 24px; isolation: isolate;"><tspan x="0" y="0">1111</tspan></text>
+  </g>
+  <g style="fill: none; isolation: isolate;">
+    <text transform="translate(824.51 243.02)" style="fill: #231f20; font-family: UniversLTStd-Cn, &apos;Univers LT Std&apos;; font-size: 24px; isolation: isolate;"><tspan x="0" y="0">0101</tspan></text>
+  </g>
+  <g style="fill: none; isolation: isolate;">
+    <text transform="translate(839.96 378.07)" style="fill: #231f20; font-family: UniversLTStd-Cn, &apos;Univers LT Std&apos;; font-size: 24px; isolation: isolate;"><tspan x="0" y="0">0001</tspan></text>
+  </g>
+  <g style="fill: none; isolation: isolate;">
+    <text transform="translate(819.18 102.05)" style="fill: #231f20; font-family: UniversLTStd-Cn, &apos;Univers LT Std&apos;; font-size: 24px; isolation: isolate;"><tspan x="0" y="0">0100</tspan></text>
+  </g>
+  <g style="fill: none; isolation: isolate;">
+    <text transform="translate(937.25 54.29)" style="fill: #ed1c24; font-family: UniversLTStd-Cn, &apos;Univers LT Std&apos;; font-size: 24px; isolation: isolate;"><tspan x="0" y="0">1001</tspan></text>
+  </g>
+  <g style="fill: none; isolation: isolate;">
+    <text transform="translate(937.25 88.59)" style="fill: #ed1c24; font-family: UniversLTStd-Cn, &apos;Univers LT Std&apos;; font-size: 24px; isolation: isolate;"><tspan x="0" y="0">0110</tspan></text>
+  </g>
+  <g style="fill: none; isolation: isolate;">
+    <text transform="translate(698.8 19.92)" style="fill: #231f20; font-family: UniversLTStd-Cn, &apos;Univers LT Std&apos;; font-size: 24px; isolation: isolate;"><tspan x="0" y="0">0000</tspan></text>
+  </g>
+</svg>
