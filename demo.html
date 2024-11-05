@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Grid with Mineral Power Circles</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+      padding-top: 20px; /* Padding at the top */
+      background-color: #f0f0f0;
+    }
+    #container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    canvas {
+      border: 1px solid #ccc;
+      background-color: #87CEEB; /* Sky blue background for grid */
+    }
+    #powerBarContainer {
+      width: 20px;
+      height: 300px;
+      background-color: #ddd;
+      border: 1px solid #aaa;
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    #powerBar {
+      width: 100%;
+      background-color: #76c7c0;
+    }
+    #powerCirclesContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+    #powerCircles {
+      display: flex;
+      flex-wrap: wrap;
+      width: 300px;
+      height: 150px;
+      position: relative;
+      margin-top: 10px;
+      background: linear-gradient(to bottom, #ffe4c4, #f4a460, #d2691e, #a0522d, #8b4513); /* Earth layers gradient */
+      padding: 10px;
+      gap: 20px;
+    }
+    .power-circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    #addCircleButton {
+      margin-top: 10px;
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #32CD32;
+      border: none;
+      color: #fff;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <canvas id="gridCanvas" width="300" height="300"></canvas>
+  <div id="powerBarContainer">
+    <div id="powerBar"></div>
+  </div>
+</div>
+
+<div id="powerCirclesContainer">
+  <div id="powerCircles"></div>
+  <button id="addCircleButton">Add Circle</button>
+</div>
+
+<script>
+  const canvas = document.getElementById('gridCanvas');
+  const ctx = canvas.getContext('2d');
+  const squareSize = 30;
+  const rows = canvas.height / squareSize;
+  const cols = canvas.width / squareSize;
+  const grid = Array.from({ length: rows }, (_, row) => Array(cols).fill(row === rows - 1 ? "ground" : false)); // Ground row at the bottom
+  const maxPower = 50;
+  let power = maxPower;
+  let isDrawing = false;
+  const powerCostPerSquare = 5;
+
+  // Pre-light middle squares in the row above the ground row
+  const startCol = Math.floor(cols / 2) - 1;
+  const initialLitSquares = [startCol, startCol + 1];
+  initialLitSquares.forEach(col => {
+    grid[rows - 2][col] = true;
+  });
+
+  function drawGrid() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let row = 0; row < rows; row++) {
+      for (let col = 0; col < cols; col++) {
+        if (grid[row][col] === "ground") {
+          ctx.fillStyle = '#32CD32'; // Grass green color for ground row
+        } else if (grid[row][col]) {
+          ctx.fillStyle = '#e76f51'; // Darker, saturated orange for lit squares
+        } else {
+          ctx.fillStyle = '#87CEEB'; // Sky blue for unlit squares
+        }
+        ctx.fillRect(col * squareSize, row * squareSize, squareSize, squareSize);
+        ctx.strokeStyle = '#ccc';
+        ctx.strokeRect(col * squareSize, row * squareSize, squareSize, squareSize);
+      }
+    }
+  }
+
+  function updatePowerBar() {
+    const powerBar = document.getElementById('powerBar');
+    powerBar.style.height = `${(power / maxPower) * 100}%`;
+  }
+
+  function getSquarePosition(x, y) {
+    const col = Math.floor(x / squareSize);
+    const row = Math.floor(y / squareSize);
+    return { row, col };
+  }
+
+  function canLightUpSquare(row, col) {
+    if (row < 0 || row >= rows - 1 || col < 0 || col >= cols || grid[row][col] || power < powerCostPerSquare) return false;
+
+    const adjacentSquares = [
+      { r: row - 1, c: col },
+      { r: row + 1, c: col },
+      { r: row, c: col - 1 },
+      { r: row, c: col + 1 }
+    ];
+
+    return adjacentSquares.some(({ r, c }) => r >= 0 && r < rows && c >= 0 && c < cols && grid[r][c] === true);
+  }
+
+  function lightUpSquare(row, col) {
+    if (canLightUpSquare(row, col)) {
+      grid[row][col] = true;
+      power -= powerCostPerSquare;
+      drawGrid();
+      updatePowerBar();
+    }
+  }
+
+  function getRandomColor() {
+    const colors = ['#ff6f61', '#6b5b95', '#88b04b', '#f7cac9', '#92a8d1'];
+    return colors[Math.floor(Math.random() * colors.length)];
+  }
+
+  function createPowerCircles() {
+    const powerCirclesContainer = document.getElementById('powerCircles');
+    for (let i = 0; i < 20; i++) {
+      addPowerCircle(powerCirclesContainer);
+    }
+  }
+
+  function addPowerCircle(container) {
+    const circle = document.createElement('div');
+    circle.className = 'power-circle';
+    circle.style.backgroundColor = getRandomColor();
+
+    let x, y, overlapping;
+    do {
+      x = Math.random() * (container.clientWidth - 40);
+      y = Math.random() * (container.clientHeight - 40);
+      overlapping = false;
+
+      for (let j = 0; j < container.children.length; j++) {
+        const existingCircle = container.children[j];
+        const rect = existingCircle.getBoundingClientRect();
+        const distance = Math.sqrt((rect.left - x) ** 2 + (rect.top - y) ** 2);
+        if (distance < 50) {
+          overlapping = true;
+          break;
+        }
+      }
+    } while (overlapping);
+
+    circle.style.left = `${x}px`;
+    circle.style.top = `${y}px`;
+    circle.style.position = 'absolute';
+
+    circle.addEventListener('click', () => {
+      if (power < maxPower) {
+        power += powerCostPerSquare;
+        power = Math.min(power, maxPower);
+        updatePowerBar();
+        container.removeChild(circle);
+      }
+    });
+
+    container.appendChild(circle);
+  }
+
+  document.getElementById('addCircleButton').addEventListener('click', () => {
+    addPowerCircle(document.getElementById('powerCircles'));
+  });
+
+  canvas.addEventListener('mousedown', (e) => {
+    isDrawing = true;
+    const { row, col } = getSquarePosition(e.offsetX, e.offsetY);
+    lightUpSquare(row, col);
+  });
+
+  canvas.addEventListener('mousemove', (e) => {
+    if (isDrawing) {
+      const { row, col } = getSquarePosition(e.offsetX, e.offsetY);
+      lightUpSquare(row, col);
+    }
+  });
+
+  canvas.addEventListener('mouseup', () => {
+    isDrawing = false;
+  });
+
+  canvas.addEventListener('mouseleave', () => {
+    isDrawing = false;
+  });
+
+  drawGrid();
+  updatePowerBar();
+  createPowerCircles();
+</script>
+
+</body>
+</html>
