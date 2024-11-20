@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800" height="2770">
+<rect x="0" y="0" width="100" height="100" fill="#FF0000" />
+<text x="50" y="50" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1,)</text>
+<rect x="120" y="0" width="100" height="100" fill="#FF00DA" />
+<text x="170" y="50" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2,)</text>
+<rect x="240" y="0" width="100" height="100" fill="#4800FF" />
+<text x="290" y="50" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(3,)</text>
+<rect x="360" y="0" width="100" height="100" fill="#0091FF" />
+<text x="410" y="50" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(4,)</text>
+<rect x="480" y="0" width="100" height="100" fill="#00FF91" />
+<text x="530" y="50" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(5,)</text>
+<rect x="600" y="0" width="100" height="100" fill="#48FF00" />
+<text x="650" y="50" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(6,)</text>
+<rect x="0" y="120" width="100" height="100" fill="#FFDA00" />
+<text x="50" y="170" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(7,)</text>
+<rect x="120" y="120" width="100" height="100" fill="#FF006D" />
+<text x="170" y="170" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2)</text>
+<rect x="240" y="120" width="100" height="100" fill="#A3007F" />
+<text x="290" y="170" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 3)</text>
+<rect x="360" y="120" width="100" height="100" fill="#7F487F" />
+<text x="410" y="170" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 4)</text>
+<rect x="480" y="120" width="100" height="100" fill="#7F7F48" />
+<text x="530" y="170" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 5)</text>
+<rect x="600" y="120" width="100" height="100" fill="#A37F00" />
+<text x="650" y="170" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 6)</text>
+<rect x="0" y="240" width="100" height="100" fill="#FF6D00" />
+<text x="50" y="290" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 7)</text>
+<rect x="120" y="240" width="100" height="100" fill="#A300EC" />
+<text x="170" y="290" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 3)</text>
+<rect x="240" y="240" width="100" height="100" fill="#7F48EC" />
+<text x="290" y="290" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 4)</text>
+<rect x="360" y="240" width="100" height="100" fill="#7F7FB5" />
+<text x="410" y="290" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 5)</text>
+<rect x="480" y="240" width="100" height="100" fill="#A37F6D" />
+<text x="530" y="290" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 6)</text>
+<rect x="600" y="240" width="100" height="100" fill="#FF6D6D" />
+<text x="650" y="290" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 7)</text>
+<rect x="0" y="360" width="100" height="100" fill="#2448FF" />
+<text x="50" y="410" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(3, 4)</text>
+<rect x="120" y="360" width="100" height="100" fill="#247FC8" />
+<text x="170" y="410" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(3, 5)</text>
+<rect x="240" y="360" width="100" height="100" fill="#487F7F" />
+<text x="290" y="410" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(3, 6)</text>
+<rect x="360" y="360" width="100" height="100" fill="#A36D7F" />
+<text x="410" y="410" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(3, 7)</text>
+<rect x="480" y="360" width="100" height="100" fill="#00C8C8" />
+<text x="530" y="410" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(4, 5)</text>
+<rect x="600" y="360" width="100" height="100" fill="#24C87F" />
+<text x="650" y="410" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(4, 6)</text>
+<rect x="0" y="480" width="100" height="100" fill="#7FB57F" />
+<text x="50" y="530" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(4, 7)</text>
+<rect x="120" y="480" width="100" height="100" fill="#24FF48" />
+<text x="170" y="530" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(5, 6)</text>
+<rect x="240" y="480" width="100" height="100" fill="#7FEC48" />
+<text x="290" y="530" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(5, 7)</text>
+<rect x="360" y="480" width="100" height="100" fill="#A3EC00" />
+<text x="410" y="530" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(6, 7)</text>
+<rect x="480" y="480" width="100" height="100" fill="#C2009D" />
+<text x="530" y="530" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 3)</text>
+<rect x="600" y="480" width="100" height="100" fill="#AA309D" />
+<text x="650" y="530" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 4)</text>
+<rect x="0" y="600" width="100" height="100" fill="#AA5579" />
+<text x="50" y="650" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 5)</text>
+<rect x="120" y="600" width="100" height="100" fill="#C25548" />
+<text x="170" y="650" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 6)</text>
+<rect x="240" y="600" width="100" height="100" fill="#FF4848" />
+<text x="290" y="650" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 7)</text>
+<rect x="360" y="600" width="100" height="100" fill="#6D30AA" />
+<text x="410" y="650" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 3, 4)</text>
+<rect x="480" y="600" width="100" height="100" fill="#6D5585" />
+<text x="530" y="650" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 3, 5)</text>
+<rect x="600" y="600" width="100" height="100" fill="#855555" />
+<text x="650" y="650" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 3, 6)</text>
+<rect x="0" y="720" width="100" height="100" fill="#C24855" />
+<text x="50" y="770" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 3, 7)</text>
+<rect x="120" y="720" width="100" height="100" fill="#558585" />
+<text x="170" y="770" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 4, 5)</text>
+<rect x="240" y="720" width="100" height="100" fill="#6D8555" />
+<text x="290" y="770" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 4, 6)</text>
+<rect x="360" y="720" width="100" height="100" fill="#AA7955" />
+<text x="410" y="770" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 4, 7)</text>
+<rect x="480" y="720" width="100" height="100" fill="#6DAA30" />
+<text x="530" y="770" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 5, 6)</text>
+<rect x="600" y="720" width="100" height="100" fill="#AA9D30" />
+<text x="650" y="770" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 5, 7)</text>
+<rect x="0" y="840" width="100" height="100" fill="#C29D00" />
+<text x="50" y="890" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 6, 7)</text>
+<rect x="120" y="840" width="100" height="100" fill="#6D30F2" />
+<text x="170" y="890" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 3, 4)</text>
+<rect x="240" y="840" width="100" height="100" fill="#6D55CE" />
+<text x="290" y="890" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 3, 5)</text>
+<rect x="360" y="840" width="100" height="100" fill="#85559D" />
+<text x="410" y="890" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 3, 6)</text>
+<rect x="480" y="840" width="100" height="100" fill="#C2489D" />
+<text x="530" y="890" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 3, 7)</text>
+<rect x="600" y="840" width="100" height="100" fill="#5585CE" />
+<text x="650" y="890" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 4, 5)</text>
+<rect x="0" y="960" width="100" height="100" fill="#6D859D" />
+<text x="50" y="1010" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 4, 6)</text>
+<rect x="120" y="960" width="100" height="100" fill="#AA799D" />
+<text x="170" y="1010" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 4, 7)</text>
+<rect x="240" y="960" width="100" height="100" fill="#6DAA79" />
+<text x="290" y="1010" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 5, 6)</text>
+<rect x="360" y="960" width="100" height="100" fill="#AA9D79" />
+<text x="410" y="1010" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 5, 7)</text>
+<rect x="480" y="960" width="100" height="100" fill="#C29D48" />
+<text x="530" y="1010" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 6, 7)</text>
+<rect x="600" y="960" width="100" height="100" fill="#1885DA" />
+<text x="650" y="1010" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(3, 4, 5)</text>
+<rect x="0" y="1080" width="100" height="100" fill="#3085AA" />
+<text x="50" y="1130" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(3, 4, 6)</text>
+<rect x="120" y="1080" width="100" height="100" fill="#6D79AA" />
+<text x="170" y="1130" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(3, 4, 7)</text>
+<rect x="240" y="1080" width="100" height="100" fill="#30AA85" />
+<text x="290" y="1130" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(3, 5, 6)</text>
+<rect x="360" y="1080" width="100" height="100" fill="#6D9D85" />
+<text x="410" y="1130" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(3, 5, 7)</text>
+<rect x="480" y="1080" width="100" height="100" fill="#859D55" />
+<text x="530" y="1130" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(3, 6, 7)</text>
+<rect x="600" y="1080" width="100" height="100" fill="#18DA85" />
+<text x="650" y="1130" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(4, 5, 6)</text>
+<rect x="0" y="1200" width="100" height="100" fill="#55CE85" />
+<text x="50" y="1250" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(4, 5, 7)</text>
+<rect x="120" y="1200" width="100" height="100" fill="#6DCE55" />
+<text x="170" y="1250" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(4, 6, 7)</text>
+<rect x="240" y="1200" width="100" height="100" fill="#6DF230" />
+<text x="290" y="1250" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(5, 6, 7)</text>
+<rect x="360" y="1200" width="100" height="100" fill="#9124B6" />
+<text x="410" y="1250" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 3, 4)</text>
+<rect x="480" y="1200" width="100" height="100" fill="#913F9A" />
+<text x="530" y="1250" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 3, 5)</text>
+<rect x="600" y="1200" width="100" height="100" fill="#A33F76" />
+<text x="650" y="1250" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 3, 6)</text>
+<rect x="0" y="1320" width="100" height="100" fill="#D13676" />
+<text x="50" y="1370" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 3, 7)</text>
+<rect x="120" y="1320" width="100" height="100" fill="#7F649A" />
+<text x="170" y="1370" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 4, 5)</text>
+<rect x="240" y="1320" width="100" height="100" fill="#916476" />
+<text x="290" y="1370" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 4, 6)</text>
+<rect x="360" y="1320" width="100" height="100" fill="#BF5A76" />
+<text x="410" y="1370" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 4, 7)</text>
+<rect x="480" y="1320" width="100" height="100" fill="#917F5A" />
+<text x="530" y="1370" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 5, 6)</text>
+<rect x="600" y="1320" width="100" height="100" fill="#BF765A" />
+<text x="650" y="1370" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 5, 7)</text>
+<rect x="0" y="1440" width="100" height="100" fill="#D17636" />
+<text x="50" y="1490" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 6, 7)</text>
+<rect x="120" y="1440" width="100" height="100" fill="#5164A3" />
+<text x="170" y="1490" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 3, 4, 5)</text>
+<rect x="240" y="1440" width="100" height="100" fill="#63647F" />
+<text x="290" y="1490" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 3, 4, 6)</text>
+<rect x="360" y="1440" width="100" height="100" fill="#915A7F" />
+<text x="410" y="1490" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 3, 4, 7)</text>
+<rect x="480" y="1440" width="100" height="100" fill="#637F64" />
+<text x="530" y="1490" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 3, 5, 6)</text>
+<rect x="600" y="1440" width="100" height="100" fill="#917664" />
+<text x="650" y="1490" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 3, 5, 7)</text>
+<rect x="0" y="1560" width="100" height="100" fill="#A3763F" />
+<text x="50" y="1610" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 3, 6, 7)</text>
+<rect x="120" y="1560" width="100" height="100" fill="#51A364" />
+<text x="170" y="1610" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 4, 5, 6)</text>
+<rect x="240" y="1560" width="100" height="100" fill="#7F9A64" />
+<text x="290" y="1610" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 4, 5, 7)</text>
+<rect x="360" y="1560" width="100" height="100" fill="#919A3F" />
+<text x="410" y="1610" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 4, 6, 7)</text>
+<rect x="480" y="1560" width="100" height="100" fill="#91B624" />
+<text x="530" y="1610" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 5, 6, 7)</text>
+<rect x="600" y="1560" width="100" height="100" fill="#5164DA" />
+<text x="650" y="1610" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 3, 4, 5)</text>
+<rect x="0" y="1680" width="100" height="100" fill="#6364B6" />
+<text x="50" y="1730" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 3, 4, 6)</text>
+<rect x="120" y="1680" width="100" height="100" fill="#915AB6" />
+<text x="170" y="1730" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 3, 4, 7)</text>
+<rect x="240" y="1680" width="100" height="100" fill="#637F9A" />
+<text x="290" y="1730" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 3, 5, 6)</text>
+<rect x="360" y="1680" width="100" height="100" fill="#91769A" />
+<text x="410" y="1730" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 3, 5, 7)</text>
+<rect x="480" y="1680" width="100" height="100" fill="#A37676" />
+<text x="530" y="1730" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 3, 6, 7)</text>
+<rect x="600" y="1680" width="100" height="100" fill="#51A39A" />
+<text x="650" y="1730" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 4, 5, 6)</text>
+<rect x="0" y="1800" width="100" height="100" fill="#7F9A9A" />
+<text x="50" y="1850" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 4, 5, 7)</text>
+<rect x="120" y="1800" width="100" height="100" fill="#919A76" />
+<text x="170" y="1850" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 4, 6, 7)</text>
+<rect x="240" y="1800" width="100" height="100" fill="#91B65A" />
+<text x="290" y="1850" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 5, 6, 7)</text>
+<rect x="360" y="1800" width="100" height="100" fill="#24A3A3" />
+<text x="410" y="1850" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(3, 4, 5, 6)</text>
+<rect x="480" y="1800" width="100" height="100" fill="#519AA3" />
+<text x="530" y="1850" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(3, 4, 5, 7)</text>
+<rect x="600" y="1800" width="100" height="100" fill="#639A7F" />
+<text x="650" y="1850" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(3, 4, 6, 7)</text>
+<rect x="0" y="1920" width="100" height="100" fill="#63B664" />
+<text x="50" y="1970" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(3, 5, 6, 7)</text>
+<rect x="120" y="1920" width="100" height="100" fill="#51DA64" />
+<text x="170" y="1970" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(4, 5, 6, 7)</text>
+<rect x="240" y="1920" width="100" height="100" fill="#7450AE" />
+<text x="290" y="1970" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 3, 4, 5)</text>
+<rect x="360" y="1920" width="100" height="100" fill="#825091" />
+<text x="410" y="1970" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 3, 4, 6)</text>
+<rect x="480" y="1920" width="100" height="100" fill="#A74891" />
+<text x="530" y="1970" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 3, 4, 7)</text>
+<rect x="600" y="1920" width="100" height="100" fill="#82667B" />
+<text x="650" y="1970" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 3, 5, 6)</text>
+<rect x="0" y="2040" width="100" height="100" fill="#A75E7B" />
+<text x="50" y="2090" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 3, 5, 7)</text>
+<rect x="120" y="2040" width="100" height="100" fill="#B55E5E" />
+<text x="170" y="2090" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 3, 6, 7)</text>
+<rect x="240" y="2040" width="100" height="100" fill="#74837B" />
+<text x="290" y="2090" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 4, 5, 6)</text>
+<rect x="360" y="2040" width="100" height="100" fill="#997B7B" />
+<text x="410" y="2090" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 4, 5, 7)</text>
+<rect x="480" y="2040" width="100" height="100" fill="#A77B5E" />
+<text x="530" y="2090" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 4, 6, 7)</text>
+<rect x="600" y="2040" width="100" height="100" fill="#A79148" />
+<text x="650" y="2090" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 5, 6, 7)</text>
+<rect x="0" y="2160" width="100" height="100" fill="#4F8383" />
+<text x="50" y="2210" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 3, 4, 5, 6)</text>
+<rect x="120" y="2160" width="100" height="100" fill="#747B83" />
+<text x="170" y="2210" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 3, 4, 5, 7)</text>
+<rect x="240" y="2160" width="100" height="100" fill="#827B66" />
+<text x="290" y="2210" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 3, 4, 6, 7)</text>
+<rect x="360" y="2160" width="100" height="100" fill="#829150" />
+<text x="410" y="2210" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 3, 5, 6, 7)</text>
+<rect x="480" y="2160" width="100" height="100" fill="#74AE50" />
+<text x="530" y="2210" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 4, 5, 6, 7)</text>
+<rect x="600" y="2160" width="100" height="100" fill="#4F83AE" />
+<text x="650" y="2210" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 3, 4, 5, 6)</text>
+<rect x="0" y="2280" width="100" height="100" fill="#747BAE" />
+<text x="50" y="2330" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 3, 4, 5, 7)</text>
+<rect x="120" y="2280" width="100" height="100" fill="#827B91" />
+<text x="170" y="2330" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 3, 4, 6, 7)</text>
+<rect x="240" y="2280" width="100" height="100" fill="#82917B" />
+<text x="290" y="2330" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 3, 5, 6, 7)</text>
+<rect x="360" y="2280" width="100" height="100" fill="#74AE7B" />
+<text x="410" y="2330" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 4, 5, 6, 7)</text>
+<rect x="480" y="2280" width="100" height="100" fill="#4FAE83" />
+<text x="530" y="2330" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(3, 4, 5, 6, 7)</text>
+<rect x="600" y="2280" width="100" height="100" fill="#6D6D91" />
+<text x="650" y="2330" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 3, 4, 5, 6)</text>
+<rect x="0" y="2400" width="100" height="100" fill="#8B6791" />
+<text x="50" y="2450" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 3, 4, 5, 7)</text>
+<rect x="120" y="2400" width="100" height="100" fill="#976779" />
+<text x="170" y="2450" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 3, 4, 6, 7)</text>
+<rect x="240" y="2400" width="100" height="100" fill="#977967" />
+<text x="290" y="2450" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 3, 5, 6, 7)</text>
+<rect x="360" y="2400" width="100" height="100" fill="#8B9167" />
+<text x="410" y="2450" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 4, 5, 6, 7)</text>
+<rect x="480" y="2400" width="100" height="100" fill="#6D916D" />
+<text x="530" y="2450" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 3, 4, 5, 6, 7)</text>
+<rect x="600" y="2400" width="100" height="100" fill="#6D9191" />
+<text x="650" y="2450" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(2, 3, 4, 5, 6, 7)</text>
+<rect x="0" y="2520" width="100" height="100" fill="#817C7C" />
+<text x="50" y="2570" text-anchor="middle" dominant-baseline="middle" fill="black" font-size="12">(1, 2, 3, 4, 5, 6, 7)</text>
+</svg>

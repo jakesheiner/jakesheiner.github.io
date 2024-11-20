@@ -68,9 +68,119 @@
                 This was the first time I had used an LLM for something useful in the design process, and was a revelation for me and for the other designers at Dubberly Design.
 
             </p>
-            <img src="images/drumwave_logos2.png">
+            <img src="images/ai_logo_shift.svg">
+            <div class = "row">
+                <div class = "column">
+                    <p>
+                        What appears to be a simple change is made laborious by the many inner sets that must be recolored:                    </p>
+                </div>
+                <div class = "column">
+                    </div>
+            </div>
+            <img src="images/drumwave_logo2.svg">
+            <div class = "row">
+                <div class = "column">
+                    <p>
+                        After the several iterations of the program, creating new versions of the logo became trivial:                </div>
+                <div class = "column">
+                    </div>
+            </div>
+            <div class = "row">
+                <div class = "column">
+                    <p>
+                        I was tasked with calculating the inner colors and making a list of their hexcodes. I was supposed to do it manually, but that would take hours, and I knew that it could be done programmatically, however I didn’t know how to code it, so I turned to ChatGPT.
+                    </p>
+                </div>
+                <div class = "column">
+                    <p>
+                        The process was very iterative. I would ask GPT to write a program, run it, see if it worked, and refine my prompts. The process was like a conversation, a cycle of prompts from me and responses from the model.                    </p>
+                </div>
+            </div>
+            
     </section>
-   
+    <section class="table" >
+        <img src="images/ai_logo_table1.svg" >
+        <img src="images/ai_logo_table2.svg" >
+       </section>
+   <section id="two-column">
+    <hr>
+              <div class="row">
+                <div class="column left ">
+                    <h3>First I made sure it understood the problem:</h3>
+                    <small>I am making a picture of a seven set venn diagram.
+                        Every section overlaps every other section in all possible combinations,
+                        resulting in 128 individual sections. 
+                        If each of the seven sets is a specific color (hex value), 
+                        and every section is the average color of the sets that overlap in it, 
+                        how can I calculate the colors for all 128 sections?
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </small>
+                 
+                </div>
+                <div class="column right gray">
+                    
+                    </div>
+              </div>
+              <div class="row">
+                <div class="column left">
+                    <h3>Then I asked it to make a program:</h3>
+                   <small>can you write a program that does this?</small> 
+                </div>
+                <div class="column right mid gray">
+                    <section>
+                    <h3>Program response output:</h3>
+                    <small >from itertools import combinations<br>
+                        # Hex color values for each set<br>
+                        <br>
+                        colors = {<br>
+                         'C1': '#FF0000',<br>
+                         'C2': '#00FF00',<br>
+                         'C3': '#0000FF',<br>
+                         'C4': '#FFFF00',<br>
+                         'C5': '#FF00FF',<br>
+                         'C6': '#00FFFF',<br>
+                         'C7': '#FFFFFF'<br>
+                        }<br>
+                        <br>
+                        # Function to calculate average color<br>
+                        def calculate_average_color(combination):<br>
+                        total_r, total_g, total_b = 0, 0, 0<br>
+                        num_sets = sum(combination)<br>
+                    </small>
+                </section>
+                    </div>
+                    
+              </div>
+
+              <div class="row">
+                <div class="column left">
+                    <h3>Then a program that returns a .svg <br>
+                        of the color set:</h3>
+                   <small>can you edit this code
+                    so that the rectangles do not overlap?Now can you write the program,
+                    but instead of outputting a list,
+                    it outputs an .svg file of all the color combinations
+                    as squares, organized by how many colors
+                    are in the combinations?</small> 
+                </div>
+                <div class="column right gray" >
+                    <section>
+                    <h3>Program response output:</h3>
+                    <img src="images/color_grid.svg" alt="color grid" width="50%" >
+                    <small>
+                    </small>
+                </section>
+                    </div>
+                    
+              </div>
+   </section>
+  
+   <section class="table">
+    <img src="images/ai_logo_table1.svg">
+   </section>
     </main>
 
     

@@ -25,16 +25,190 @@
         </div>
     </header>
    
-    <main>
+    <main class = "details">
         
         <section>
             <a href="https://github.com/jakesheiner/myQuilt">check out the Github here</a>
-            <h2>The initial diagram for myQuilt:</h2>
-            <img src="images/Journal-App-Map.png" alt="myQuilt's initial diagram">
+            <h2>How it works:</h2>
+            <img src="images/MyQuilt_Map.png" alt="myQuilt's initial diagram">
             <p>
                 At first, the concept was to have three tabs, navigatble by a tab bar at the bottom: a journal view, with swipable pages,
                 a grid view, that would later become the quilt, and a text entry view.
             </p>
+            
+                    <p>The App opens to the quilt view screen, where the user can view their past entries as a grid, or quilt of colors and images. To generate a new entry, the user taps the plus icon at the bottom to bring up the text entry view, and enters their thoughts. The text is passed to the GPT-4 API, which generates a json file with four parts: a hexcode for the chosen color, a name for the color, an explanation for why the color was chosen, and a prompt for an image generator for a quilt square based on the entry. </p>
+               <br>
+                    <p>The first three items are added to the new entry, and the prompt is sent to the Dall-e 2 API, which generates an image, and adds that to the entry.
+                        Then the new entry is added to the entries array ( a list of all the entries thus far) which is used to render the quilt and journal views.</p>
+              
+              
+    </section>
+    
+        <h2>After I had coded a usable prototype, I began user testing.</h2>
+        <div class = "row" id = "title">
+            <div class ="column">
+                <p style="margin-bottom:1rem;">
+                    <em>Problems identified in user testing:</em>
+                </p>
+            </div>
+            <div class ="column">
+                <p style="margin-bottom:1rem;">
+                    <em>Solutions:</em>
+                </p>
+            </div>
+        </div>
+       <hr>
+       <div class = "row">
+        <div class ="column right">
+            <ul>
+                <li>Users were attempting to tap on squares in quilt view</li>
+            </ul>
+        </div>
+        <div class ="column">
+            <ul>
+                <li>This led me to the an important insight: I could get rid of the bottom task bar altogether, and use the tapping of the quilt squares to navigate to the journal view, at the page corresponding to the tapped square. The user can still swipe though like a book, but the overall interface is simplified and more intuitive.
+                </li>
+                </ul>
+        </div>
+    </div>
+    
+    <div class = "row">
+        <div class ="column right">
+            <ul>
+                <li>users’ journal entries were short,<br>leaving a lot of unused space on journal view pages.
+                </li>
+                </ul>
+        </div>
+        <div class ="column">
+            <ul>
+               <li> To fill the remaining space on the journal pages, I added image generation from the  Dall-e 2 API. Displaying the images filled the screen satisfyingly and doing so on the quilt view also reinforced the quilt metaphor for the user.
+            </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class = "row">
+        <div class ="column right">
+            <ul>
+                <li>users were confused by long loading times <br>before new entries appeared in the quilt view
+                </li>
+                </ul>
+        </div>
+        <div class ="column">
+            <ul>
+                <li>I implemented a simple loading animation on a blank square where the new quilt block was going to appear.
+                </li>
+                </ul>
+        </div>
+    </div>
+    
+    <div class = "row">
+        <div class ="column right">
+            <ul>
+                <li>Black text could be illegible if a dark color was generated.
+    
+                </li>
+    
+            </ul>
+        </div>
+        <div class ="column">
+            <ul>
+                <li>I added a portion of code to switch between white or black text depending on the luminance of the background color. This improved aesthetics and accessibility.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <h2>The app went through many versions before the final design:</h2>
+        <div class="row" id="iterations">
+            <div class="column">
+                <div class="ui-pictures">
+                    <img src="images/paper_journal.png" alt="the quilt view">
+                    <img src="images/paper_entry.png" alt="the quilt view">
+                    <img src="images/original_grid.png" alt="the quilt view">
+                </div>  
+              
+            </div>
+        <div class="column">
+           
+            <p><em>left:</em>
+                The original design was Skeumorphic, designed to resemble a leather bound journal, with textured paper for the user to ‘write’ on, and read their thoughts.                
+                </p>
+                <p>
+                    <em>Middle:</em>
+                    The very earliest version had a separate tab for the text entry, but I quickly replaced it with a tray that slid up from the bottom.                </p>
+
+                <p>
+                    <em>Right:</em>
+                    The original quilt view design was poorly executed: too much space between the squares, distracting drop shadows and an unpleasant gradient.                </p>
+            
+            
+        </div>
+        
+    </div>
+
+   
+    <div class="row" id="iterations">
+        <div class="column">
+            <div class="ui-pictures">
+                <img src="images/journal_tabs.png" alt="the quilt view">
+                <img src="images/text_entry.png" alt="the quilt view">
+                <img src="images/rectangle_grid.png" alt="the quilt view">
+            </div>  
+          
+        </div>
+    <div class="column">
+       
+        <p><em>left:</em>
+            The original design was Skeumorphic, designed to resemble a leather bound journal, with textured paper for the user to ‘write’ on, and read their thoughts.                
+            </p>
+            <p>
+                <em>Middle:</em>
+                The very earliest version had a separate tab for the text entry, but I quickly replaced it with a tray that slid up from the bottom.                </p>
+
+            <p>
+                <em>Right:</em>
+                The original quilt view design was poorly executed: too much space between the squares, distracting drop shadows and an unpleasant gradient.                </p>
+        
+        
+    </div>
+    
+</div>
+
+    <div class="row" id="iterations">
+        <div class="column">
+            <picture_with_caption>
+            <img src="images/journal_tabs.png" alt="the quilt view">
+            <p>
+                The original design was Skeumorphic, designed to resemble a leather bound journal, with textured paper for the user to ‘write’ on, and read their thoughts.
+            </p>
+        </picture_with_caption>
+        </div>
+
+        <div class="column">
+            <picture_with_caption>
+            <img src="images/text_entry.png" alt="the quilt view">
+            <p>
+                The very earliest version had a separate tab for the text entry, but I quickly replaced it with a tray that slid up from the bottom.
+            </p>
+        </picture_with_caption>
+        
+        </div>
+
+        <div class="column">
+        <picture_with_caption>
+            <img src="images/rectangle_grid.png" alt="the quilt view">
+            <p>
+                The original quilt view design was poorly executed: too much space between the squares, distracting drop shadows and an unpleasant gradient.
+            </p>
+            </picture_with_caption>
+        </div>
+    </div>
+
+   
+
+    <section>
+        
     </section>
     <section>
         <h2>The first version had a skeumorphic UI</h2>
