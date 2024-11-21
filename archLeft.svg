@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+  <rect x="30" y="30" width="30" height="30" transform="translate(90 90) rotate(-180)" style="fill: #fbb040;"/>
+  <path d="m30,60v-30S0,30,0,30c2.64.21,12.11,1.27,20.17,9.08,8.54,8.27,9.63,18.4,9.83,20.92Z" style="fill: #fbb040;"/>
+</svg>
