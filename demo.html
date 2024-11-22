@@ -45,7 +45,8 @@
     wall: [new Image(), new Image()],
     archLeft: [new Image(), new Image()],
     archRight: [new Image(), new Image()],
-    balcony: [new Image()]  // Gate only has one version
+    balcony: [new Image()],  // Gate only has one version
+    archBoth: [new Image(), new Image()]
   };
 
   // Specify image sources for each version (with window and without window)
@@ -60,6 +61,9 @@
   
   svgImages.archRight[0].src = 'archRight.svg';   // Without window
   svgImages.archRight[1].src = 'archRightWindow.svg'; // With window
+
+  svgImages.archBoth[0].src = 'archBoth.svg';
+  svgImages.archBoth[1].src = 'archBothWindow.svg'
   
   svgImages.balcony[0].src = 'balcony.svg';             // No window version, only one version
 
@@ -124,7 +128,9 @@
     if (!top && !left && !right && !topLeft && !topRight) {
       return "tower";
     }
-    
+    if(!left && !right && topLeft && topRight){
+      return "archBoth";
+    }
     if (topLeft && !left) {
       return "archLeft";
     }
@@ -135,6 +141,8 @@
     if ((left || right) && (!top && !topLeft && !topRight)) {
       return "wall";
     }
+
+    
     if (left && right && top && topLeft && topRight && bottom && bottomLeft && bottomRight) {
       return "balcony";
     }
