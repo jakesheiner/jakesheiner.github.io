@@ -211,18 +211,6 @@ img {
     }
 }
 
-.bi  {
-    display: inline-block;
-    padding: 10px;
-    
-    border: none;
-    border-radius: 24px;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-}
-
 .about img{
     border-radius: 50%;
     height: 20rem;
@@ -230,8 +218,25 @@ img {
     margin-right: auto;
     margin-bottom: 2rem;
 }
+
+.bi {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
 .bi:hover {
-    background-color: #e0e0e0;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.bullet {
+    margin: 0 0.5rem;
+    color: black;
+}
+
+.contactInfo {
+    margin-bottom: 1em;
 }
 
 .row {
@@ -340,9 +345,10 @@ img {
 p{
     font-size:1rem;
 }
+#hero .project-text p,
 .project-text p {
     
-    font-size: .8rem;
+    font-size: 1rem;
     color: #555;
 }
 
