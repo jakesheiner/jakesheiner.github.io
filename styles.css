@@ -219,7 +219,7 @@ img {
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1300px) {
     .project-content:has(.castle-demo) {
         flex-direction: column;
     }
