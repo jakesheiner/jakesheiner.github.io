@@ -80,11 +80,7 @@ p{
 l{
     font-size:0.5rem;
 }
-small {
-     display: inline-block;
-font-style: italic;
-line-height: 1.2 !important;
-}
+
 #hero p {
    font-size:1.5rem;
    line-height: 2rem;
@@ -350,6 +346,13 @@ p{
     
     font-size: 1rem;
     color: #555;
+}
+
+.project-text p.small {
+    display: inline-block;
+font-style: italic;
+line-height: 1.2 !important;
+font-size: .6rem;
 }
 
 .project-image {
