@@ -138,16 +138,7 @@ main{
     margin-right: auto;
     width: 80%;
 }
-#hero {
 
-   color:#333;
-    
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
-    border-bottom: 0.5px solid #bbb;
-    padding-bottom: 0;
-}
 
 #case-link{
     border-radius: 20px;
@@ -202,11 +193,22 @@ img {
     
 }
 
+#hero {
+    display: flex;
+    flex-direction: column-reverse;
+    color: #333;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 0.5px solid #bbb;
+    padding-bottom: 0;
+}
+
 @media only screen and (min-width: 800px) {
-    #hero{
-        display: flex;
+    #hero {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
     }
-    
 }
 
 .bi  {
