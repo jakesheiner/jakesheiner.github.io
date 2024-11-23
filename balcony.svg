@@ -3,51 +3,66 @@
 <svg version="1.1" id="a" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FBB040;}
+	.st0{fill:url(#SVGID_1_);}
 	.st1{fill:#FBCE8A;}
-	.st2{fill:#9D865E;}
-	.st3{fill:#A17129;}
-	.st4{fill:#5B5B5B;}
-	.st5{clip-path:url(#SVGID_00000016064806649845006980000012116249767574109883_);}
-	.st6{fill:#D9D9D9;}
+	.st2{fill:#FBB040;}
+	.st3{fill:#9D865E;}
+	.st4{fill:#A17129;}
+	.st5{fill:#5B5B5B;}
+	.st6{clip-path:url(#SVGID_00000083803638578548075580000006144622719544338346_);}
+	.st7{fill:#D9D9D9;}
 </style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="30" y1="45" x2="60" y2="45">
+	<stop  offset="0" style="stop-color:#DB9937"/>
+	<stop  offset="0.1227" style="stop-color:#E8A33B"/>
+	<stop  offset="0.2815" style="stop-color:#F2AA3D"/>
+	<stop  offset="0.4941" style="stop-color:#F5AC3E"/>
+	<stop  offset="0.7128" style="stop-color:#F2AA3D"/>
+	<stop  offset="0.8742" style="stop-color:#E9A33B"/>
+	<stop  offset="1" style="stop-color:#DB9937"/>
+</linearGradient>
 <rect x="30" y="30" class="st0" width="30" height="30"/>
 <g>
 	<path class="st1" d="M34.2,40.1c0-2.4,1.9-4.3,4.3-4.3h13c2.4,0,4.3,1.9,4.3,4.3v9.2H34.2V40.1z"/>
-	<path class="st0" d="M34.2,40.6c0-2.4,1.9-4.3,4.3-4.3h13c2.4,0,4.3,1.9,4.3,4.3v8.6H34.2V40.6z"/>
-	<rect x="36.3" y="44.7" transform="matrix(0.3303 -0.9439 0.9439 0.3303 -19.7093 65.914)" class="st2" width="0.5" height="4.3"/>
-	<rect x="52.6" y="46.4" transform="matrix(0.9439 -0.3303 0.3303 0.9439 -12.3685 20.4843)" class="st2" width="3" height="0.5"/>
-	<path class="st3" d="M36.9,42.4c0-2.4,1.9-4.3,4.3-4.3h7.6c2.4,0,4.3,1.9,4.3,4.3v7H36.9V42.4z"/>
-	<rect x="34.2" y="50.9" class="st2" width="21.6" height="1.4"/>
-	<path class="st4" d="M38.5,42.1c0-1.2,1-2.2,2.2-2.2h8.6c1.2,0,2.2,1,2.2,2.2v7.3h-13V42.1z"/>
+	<path class="st2" d="M34.2,40.6c0-2.4,1.9-4.3,4.3-4.3h13c2.4,0,4.3,1.9,4.3,4.3v8.6H34.2V40.6z"/>
+	
+		<rect x="36.3" y="44.8" transform="matrix(0.3303 -0.9439 0.9439 0.3303 -19.8064 65.9023)" class="st3" width="0.5" height="4.3"/>
+	<rect x="52.6" y="46.4" transform="matrix(0.9439 -0.3303 0.3303 0.9439 -12.3725 20.4878)" class="st3" width="3" height="0.5"/>
+	<path class="st4" d="M36.9,42.4c0-2.4,1.9-4.3,4.3-4.3h7.6c2.4,0,4.3,1.9,4.3,4.3v7H36.9V42.4z"/>
+	<rect x="34.2" y="50.9" class="st3" width="21.6" height="1.4"/>
+	<path class="st5" d="M38.5,42.1c0-1.2,1-2.2,2.2-2.2h8.6c1.2,0,2.2,1,2.2,2.2v7.3h-13C38.5,49.4,38.5,42.1,38.5,42.1z"/>
 	<g>
-		<defs>
-			<rect id="SVGID_1_" x="34.2" y="45.6" width="21.6" height="0.5"/>
-		</defs>
-		<clipPath id="SVGID_00000092447117498502050360000005062901856627467179_">
-			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-		</clipPath>
-		<g style="clip-path:url(#SVGID_00000092447117498502050360000005062901856627467179_);">
-			<rect x="34.2" y="45.6" class="st2" width="21.6" height="0.5"/>
-			<rect x="34.7" y="45.9" class="st2" width="3" height="0.5"/>
+		<g>
+			<g>
+				<defs>
+					<rect id="SVGID_00000038387493346235135830000005741998167441482923_" x="34.2" y="45.6" width="21.6" height="0.5"/>
+				</defs>
+				<clipPath id="SVGID_00000061434629812557266740000018298023060867450017_">
+					<use xlink:href="#SVGID_00000038387493346235135830000005741998167441482923_"  style="overflow:visible;"/>
+				</clipPath>
+				<g style="clip-path:url(#SVGID_00000061434629812557266740000018298023060867450017_);">
+					<rect x="34.2" y="45.6" class="st3" width="21.6" height="0.5"/>
+					<rect x="34.7" y="45.9" class="st3" width="3" height="0.5"/>
+				</g>
+			</g>
 		</g>
 	</g>
-	<rect x="34.2" y="46.1" class="st2" width="0.5" height="4.9"/>
-	<path class="st6" d="M55.4,51l-2-1.5H37.2L34.6,51H55.4z"/>
-	<rect x="37.2" y="46.1" class="st2" width="0.5" height="4.9"/>
-	<rect x="38.8" y="46.1" class="st2" width="0.5" height="4.9"/>
-	<rect x="40.1" y="46.1" class="st2" width="0.5" height="4.9"/>
-	<rect x="41.8" y="46.1" class="st2" width="0.5" height="4.9"/>
-	<rect x="43.1" y="46.1" class="st2" width="0.5" height="4.9"/>
-	<rect x="44.7" y="46.1" class="st2" width="0.5" height="4.9"/>
-	<rect x="46.1" y="46.1" class="st2" width="0.5" height="4.9"/>
-	<rect x="47.7" y="46.1" class="st2" width="0.5" height="4.9"/>
-	<rect x="49.1" y="46.1" class="st2" width="0.5" height="4.9"/>
-	<rect x="50.7" y="46.1" class="st2" width="0.5" height="4.9"/>
-	<rect x="52" y="46.1" class="st2" width="0.5" height="4.9"/>
-	<rect x="53.6" y="46.1" class="st2" width="0.5" height="4.9"/>
-	<rect x="55.3" y="46.1" class="st2" width="0.5" height="4.9"/>
-	<rect x="35.8" y="46.1" class="st2" width="0.5" height="4.9"/>
-	<rect x="34.2" y="53.4" class="st3" width="21.6" height="0.8"/>
+	<rect x="34.2" y="46.1" class="st3" width="0.5" height="4.9"/>
+	<path class="st7" d="M55.4,51l-2-1.5H37.2L34.6,51H55.4z"/>
+	<rect x="37.2" y="46.1" class="st3" width="0.5" height="4.9"/>
+	<rect x="38.8" y="46.1" class="st3" width="0.5" height="4.9"/>
+	<rect x="40.1" y="46.1" class="st3" width="0.5" height="4.9"/>
+	<rect x="41.8" y="46.1" class="st3" width="0.5" height="4.9"/>
+	<rect x="43.1" y="46.1" class="st3" width="0.5" height="4.9"/>
+	<rect x="44.7" y="46.1" class="st3" width="0.5" height="4.9"/>
+	<rect x="46.1" y="46.1" class="st3" width="0.5" height="4.9"/>
+	<rect x="47.7" y="46.1" class="st3" width="0.5" height="4.9"/>
+	<rect x="49.1" y="46.1" class="st3" width="0.5" height="4.9"/>
+	<rect x="50.7" y="46.1" class="st3" width="0.5" height="4.9"/>
+	<rect x="52" y="46.1" class="st3" width="0.5" height="4.9"/>
+	<rect x="53.6" y="46.1" class="st3" width="0.5" height="4.9"/>
+	<rect x="55.3" y="46.1" class="st3" width="0.5" height="4.9"/>
+	<rect x="35.8" y="46.1" class="st3" width="0.5" height="4.9"/>
+	<rect x="34.2" y="53.4" class="st4" width="21.6" height="0.8"/>
 </g>
 </svg>

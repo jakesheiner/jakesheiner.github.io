@@ -46,7 +46,8 @@
     archLeft: [new Image(), new Image()],
     archRight: [new Image(), new Image()],
     balcony: [new Image()],  // Gate only has one version
-    archBoth: [new Image(), new Image()]
+    archBoth: [new Image(), new Image()],
+    stack: [new Image(), new Image()]
   };
 
   // Specify image sources for each version (with window and without window)
@@ -67,6 +68,8 @@
   
   svgImages.balcony[0].src = 'balcony.svg';             // No window version, only one version
 
+  svgImages.stack[0].src = 'stack.svg';
+  svgImages.stack[1].src ='stack.svg';
   function drawGrid() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -138,17 +141,26 @@
     if (topRight && !right) {
       return "archRight";
     }
-    if ((left || right) && (!top && !topLeft && !topRight)) {
+
+    if (( !topLeft && !topRight) && (!bottomLeft || !bottomRight) && top) {
+      return "stack";
+    }
+
+    if ((left || right) && ( !topLeft && !topRight)) {
       return "wall";
     }
 
-    
-    if (left && right && top && topLeft && topRight && bottom && bottomLeft && bottomRight) {
-      return "balcony";
+
+    if ((left || right) && ( topLeft || topRight) && !top) {
+      return "wall";
     }
+    
+  //  if (left && right && top && topLeft && topRight && bottom && bottomLeft && bottomRight) {
+   //   return "balcony";
+   // }
 
     // If there is an open area with no adjacent squares, place a gate (example for testing)
-    return "wall"; // You can modify the logic to place the gate conditionally
+    return "stack"; // You can modify the logic to place the gate conditionally
   }
 
   function lightUpSquare(row, col) {

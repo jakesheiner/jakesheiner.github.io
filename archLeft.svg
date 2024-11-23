@@ -1,5 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
-  <rect x="30" y="30" width="30" height="30" transform="translate(90 90) rotate(-180)" style="fill: #fbb040;"/>
-  <path d="m30,60v-30S0,30,0,30c2.64.21,12.11,1.27,20.17,9.08,8.54,8.27,9.63,18.4,9.83,20.92Z" style="fill: #fbb040;"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.6.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="a" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_00000052102586330099994290000012056190543622074015_);}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="30" y1="45" x2="60" y2="45">
+	<stop  offset="0" style="stop-color:#DB9937"/>
+	<stop  offset="0.1227" style="stop-color:#E8A33B"/>
+	<stop  offset="0.2815" style="stop-color:#F2AA3D"/>
+	<stop  offset="0.4941" style="stop-color:#F5AC3E"/>
+	<stop  offset="0.7128" style="stop-color:#F2AA3D"/>
+	<stop  offset="0.8742" style="stop-color:#E9A33B"/>
+	<stop  offset="1" style="stop-color:#DB9937"/>
+</linearGradient>
+<rect x="30" y="30" class="st0" width="30" height="30"/>
+<linearGradient id="SVGID_00000151535558837870622490000007341859829485274760_" gradientUnits="userSpaceOnUse" x1="0" y1="45" x2="30" y2="45">
+	<stop  offset="0" style="stop-color:#DB9937"/>
+	<stop  offset="0.1227" style="stop-color:#E8A33B"/>
+	<stop  offset="0.2815" style="stop-color:#F2AA3D"/>
+	<stop  offset="0.4941" style="stop-color:#F5AC3E"/>
+	<stop  offset="0.7128" style="stop-color:#F2AA3D"/>
+	<stop  offset="0.8742" style="stop-color:#E9A33B"/>
+	<stop  offset="1" style="stop-color:#DB9937"/>
+</linearGradient>
+<path style="fill:url(#SVGID_00000151535558837870622490000007341859829485274760_);" d="M30,60V30H0c2.6,0.2,12.1,1.3,20.2,9.1
+	C28.7,47.4,29.8,57.5,30,60z"/>
 </svg>

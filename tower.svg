@@ -3,9 +3,23 @@
 <svg version="1.1" id="a" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FBB040;}
-	.st1{fill:#BE1E2D;}
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_00000050622058130164996280000002205970015831373757_);}
 </style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="30" y1="45" x2="60" y2="45">
+	<stop  offset="0" style="stop-color:#DB9937"/>
+	<stop  offset="0.1227" style="stop-color:#E8A33B"/>
+	<stop  offset="0.2815" style="stop-color:#F2AA3D"/>
+	<stop  offset="0.4941" style="stop-color:#F5AC3E"/>
+	<stop  offset="0.7128" style="stop-color:#F2AA3D"/>
+	<stop  offset="0.8742" style="stop-color:#E9A33B"/>
+	<stop  offset="1" style="stop-color:#DB9937"/>
+</linearGradient>
 <rect x="30" y="30" class="st0" width="30" height="30"/>
-<polygon class="st1" points="45,0 24.2,30 65.8,30 "/>
+<linearGradient id="SVGID_00000120557527651833660300000012136544538500779698_" gradientUnits="userSpaceOnUse" x1="24.2" y1="15" x2="65.8" y2="15">
+	<stop  offset="0" style="stop-color:#80141E"/>
+	<stop  offset="0.4948" style="stop-color:#BE1E2D"/>
+	<stop  offset="1" style="stop-color:#80141E"/>
+</linearGradient>
+<polygon style="fill:url(#SVGID_00000120557527651833660300000012136544538500779698_);" points="45,0 24.2,30 65.8,30 "/>
 </svg>
