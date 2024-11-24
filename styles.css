@@ -80,11 +80,7 @@ p{
 l{
     font-size:0.5rem;
 }
-small {
-     display: inline-block;
-font-style: italic;
-line-height: 1.2 !important;
-}
+
 #hero p {
    font-size:1.5rem;
    line-height: 2rem;
@@ -138,16 +134,7 @@ main{
     margin-right: auto;
     width: 80%;
 }
-#hero {
 
-   color:#333;
-    
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
-    border-bottom: 0.5px solid #bbb;
-    padding-bottom: 0;
-}
 
 #case-link{
     border-radius: 20px;
@@ -202,23 +189,22 @@ img {
     
 }
 
-@media only screen and (min-width: 800px) {
-    #hero{
-        display: flex;
-    }
-    
+#hero {
+    display: flex;
+    flex-direction: column-reverse;
+    color: #333;
+    align-items: flex-start;
+    gap: 1rem;
+    border-bottom: 0.5px solid #bbb;
+    padding-bottom: 0;
 }
 
-.bi  {
-    display: inline-block;
-    padding: 10px;
-    
-    border: none;
-    border-radius: 24px;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
+@media only screen and (min-width: 800px) {
+    #hero {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
 }
 
 .about img{
@@ -228,8 +214,25 @@ img {
     margin-right: auto;
     margin-bottom: 2rem;
 }
+
+.bi {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
 .bi:hover {
-    background-color: #e0e0e0;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.bullet {
+    margin: 0 0.5rem;
+    color: black;
+}
+
+.contactInfo {
+    margin-bottom: 1em;
 }
 
 .row {
@@ -338,10 +341,18 @@ img {
 p{
     font-size:1rem;
 }
+#hero .project-text p,
 .project-text p {
     
-    font-size: .8rem;
+    font-size: 1rem;
     color: #555;
+}
+
+.project-text p.small {
+    display: inline-block;
+font-style: italic;
+line-height: 1.2 !important;
+font-size: .6rem;
 }
 
 .project-image {
