@@ -395,6 +395,11 @@ ul{
     list-style-type: none;
 }
 
+header h1{
+    font-family: futura;
+    color: #ee3062;
+    font-style: condenced;
+}
 @media (max-width: 768px) {
     .project-content {
         flex-direction: column;
