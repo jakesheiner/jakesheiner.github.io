@@ -81,11 +81,7 @@ l{
     font-size:0.5rem;
 }
 
-#hero p {
-   font-size:1.5rem;
-   line-height: 2rem;
 
-}
 nav ul {
     list-style: none;
     padding: 0;
@@ -144,9 +140,7 @@ a{
     text-decoration: none;
     color: none;
 }
-#case-link:hover{
-    background-color: rgb(238, 236, 236);
-}
+
 /* Footer Styles */
 footer {
     background: #333;
@@ -323,6 +317,8 @@ img {
 .project:hover {
     transform: translateY(-5px);
     box-shadow: 0 16px 30px rgba(0, 0, 0, 0.05);
+    
+   
 }
 
 .project-text {
@@ -360,7 +356,8 @@ font-size: .6rem;
     flex: 1;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: left;
+    max-height: 32rem;
    
 
 padding-right: 2rem;
@@ -369,6 +366,11 @@ padding-right: 2rem;
    
 }
 
+.project-image img{
+    
+  max-height: 100%;
+  display: block;
+}
 .ui-pictures{
     
    
