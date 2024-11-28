@@ -6,6 +6,18 @@ const canvas = document.getElementById('gridCanvas');
   const grid = Array.from({ length: rows }, () => Array(cols).fill(false));
   let isDragging = false;
 
+  // Add clear button functionality
+document.getElementById('clearCanvas').addEventListener('click', () => {
+  // Reset the grid array
+  for (let row = 0; row < rows; row++) {
+      for (let col = 0; col < cols; col++) {
+          grid[row][col] = false;
+      }
+  }
+  // Redraw the empty grid
+  drawGrid();
+});
+
   // Preload two versions of each SVG image (with and without window), plus one piece with no window version
   const svgImages = {
     tower: [new Image(), new Image()],
