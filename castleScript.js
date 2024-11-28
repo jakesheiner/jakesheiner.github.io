@@ -142,6 +142,15 @@ document.getElementById('clearCanvas').addEventListener('click', () => {
     return "stack"; // You can modify the logic to place the gate conditionally
   }
 
+  // shift-click to clear function
+  function clearSquare(row, col) {
+    if (row >= 0 && row < rows && col >= 0 && col < cols && grid[row][col]) {
+        grid[row][col] = false;
+        drawGrid();
+    }
+}
+  //end shift-click to clear
+
   function lightUpSquare(row, col) {
     if (row >= 0 && row < rows && col >= 0 && col < cols && !grid[row][col]) {
       grid[row][col] = true;
@@ -149,24 +158,33 @@ document.getElementById('clearCanvas').addEventListener('click', () => {
     }
   }
 
-  canvas.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    const col = Math.floor(e.offsetX / squareSize);
-    const row = Math.floor(e.offsetY / squareSize);
-    lightUpSquare(row, col);
-  });
-
-  canvas.addEventListener('mousemove', (e) => {
-    if (isDragging) {
-      const col = Math.floor(e.offsetX / squareSize);
-      const row = Math.floor(e.offsetY / squareSize);
-      lightUpSquare(row, col);
-    }
-  });
-
   canvas.addEventListener('mouseup', () => {
     isDragging = false;
   });
+
+
+canvas.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  const col = Math.floor(e.offsetX / squareSize);
+  const row = Math.floor(e.offsetY / squareSize);
+  if (e.shiftKey) {
+      clearSquare(row, col);
+  } else {
+      lightUpSquare(row, col);
+  }
+});
+
+canvas.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+      const col = Math.floor(e.offsetX / squareSize);
+      const row = Math.floor(e.offsetY / squareSize);
+      if (e.shiftKey) {
+          clearSquare(row, col);
+      } else {
+          lightUpSquare(row, col);
+      }
+  }
+});
 
   canvas.addEventListener('mouseleave', () => {
     isDragging = false;
