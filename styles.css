@@ -117,7 +117,7 @@ nav ul li a {
 }
 
 .project {
-    display: flex;
+    display: block;
     text-align: center;
     flex-wrap: wrap;
     text-decoration: none;
@@ -150,6 +150,8 @@ nav ul li a {
 
 .project-text {
     flex: 1;
+    min-width: 300px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
 }
@@ -169,15 +171,15 @@ nav ul li a {
 
 .project-image {
     flex: 1;
+    min-width: 300px;
     display: flex;
     align-items: flex-start;
     justify-content: left;
-    max-height: 32rem;
-    padding-right: 2rem;
 }
 
 .project-image img {
-    max-height: 100%;
+    max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -375,12 +377,12 @@ footer {
     }
 
     .project-text, .project-image {
-        flex: 1;
-        padding-left: 0;
+        min-width: 100%;
+        padding-right: 0;
     }
 
     .project-image img {
-        width: 100%;
+        margin-top: 1rem;
     }
 
     #two-column {
