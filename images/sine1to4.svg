@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 523.01 115">
+  <defs>
+    <clipPath id="b">
+      <rect x="0" y="51.11" width="100" height="50" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="c">
+      <rect x="141" y="1.11" width="100" height="100" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="d">
+      <rect x="141" y="51.11" width="100" height="50" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="e">
+      <rect x="282" y="1.11" width="100" height="100" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="f">
+      <rect x="282" y="26.11" width="100" height="75" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="g">
+      <rect x="282" y="51.11" width="100" height="50" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="h">
+      <rect x="423.01" y="1.11" width="100" height="100" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="i">
+      <rect x="423.01" y="34.45" width="100" height="66.67" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="j">
+      <rect x="423.01" y="26.11" width="100" height="75" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="k">
+      <rect x="423.01" y="51.11" width="100" height="50" style="fill: none;"/>
+    </clipPath>
+  </defs>
+  <g>
+    <rect x="0" y="1.11" width="100" height="100" style="fill: none; stroke: #929497; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <g style="fill: none; opacity: .1;">
+      <g style="clip-path: url(#b); fill: none;">
+        <rect x=".37" y="51.49" width="99.25" height="49.25" style="fill: none;"/>
+        <path d="m99.25,100.36H.75v-48.5h98.5v48.5Zm.75-49.25H0v50h100v-50Z" style="fill: none;"/>
+      </g>
+    </g>
+    <polyline points="100 101.11 0 101.11 0 1.11" style="fill: none; stroke: #29abe2; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <rect x="0" y="51.11" width="100" height="50" style="fill: none; stroke: #ea2027; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <rect x="0" y="1.11" width="100" height="100" style="fill: none; stroke: #929497; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <rect x="0" y="51.11" width="100" height="50" style="fill: none; stroke: #00a04d; stroke-miterlimit: 10; stroke-width: .5px;"/>
+  </g>
+  <g>
+    <rect x="141" y="51.11" width="100" height="50" style="fill: none; stroke: #00a04d; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <rect x="141" y="1.11" width="100" height="100" style="fill: none; stroke: #929497; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <g style="fill: none; opacity: .1;">
+      <g style="clip-path: url(#c); fill: none;">
+        <path d="m141,101.11h100V1.11c-50,0-50,100-100,100" style="fill: none;"/>
+      </g>
+    </g>
+    <path d="m141,101.11h100V1.11c-50,0-50,100-100,100Z" style="fill: none; stroke: #29abe2; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <rect x="141" y="1.11" width="100" height="100" style="fill: none; stroke: #929497; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <path d="m141,101.11h100V1.11c-50,0-50,100-100,100Z" style="fill: none; stroke: #ed2024; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <g style="fill: none; opacity: .1;">
+      <g style="clip-path: url(#d); fill: none;">
+        <rect x="141.38" y="51.49" width="99.25" height="49.25" style="fill: none;"/>
+        <path d="m240.25,100.36h-98.5v-48.5h98.5v48.5Zm.75-49.25h-100v50h100v-50Z" style="fill: none;"/>
+      </g>
+    </g>
+    <rect x="141" y="51.11" width="100" height="50" style="fill: none; stroke: #ea2027; stroke-miterlimit: 10; stroke-width: .5px;"/>
+  </g>
+  <g>
+    <rect x="282" y="51.11" width="100" height="50" style="fill: none; stroke: #00a04d; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <g style="fill: none; opacity: .1;">
+      <g style="clip-path: url(#e); fill: none;">
+        <path d="m282,101.11h100V1.11c-50,0-50,100-100,100" style="fill: none;"/>
+      </g>
+    </g>
+    <rect x="282" y="1.11" width="100" height="100" style="fill: none; stroke: #929497; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <g style="fill: none; opacity: .1;">
+      <g style="clip-path: url(#f); fill: none;">
+        <path d="m282,26.11v75h100V26.11c-25,0-25,50-50,50s-25-50-50-50" style="fill: none;"/>
+      </g>
+    </g>
+    <path d="m282,26.11v75h100V26.11c-25,0-25,50-50,50s-25-50-50-50Z" style="fill: none; stroke: #00a54f; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <rect x="282" y="1.11" width="100" height="100" style="fill: none; stroke: #929497; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <path d="m282,26.11v75h100V26.11c-25,0-25,50-50,50s-25-50-50-50Z" style="fill: none; stroke: #29abe2; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <path d="m282,101.11h100V1.11c-50,0-50,100-100,100Z" style="fill: none; stroke: #ed2024; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <g style="fill: none; opacity: .1;">
+      <g style="clip-path: url(#g); fill: none;">
+        <rect x="282.38" y="51.49" width="99.25" height="49.25" style="fill: none;"/>
+        <path d="m381.25,100.36h-98.5v-48.5h98.5v48.5Zm.75-49.25h-100v50h100v-50Z" style="fill: none;"/>
+      </g>
+    </g>
+    <rect x="282" y="51.11" width="100" height="50" style="fill: none; stroke: #ea2027; stroke-miterlimit: 10; stroke-width: .5px;"/>
+  </g>
+  <g>
+    <rect x="423.01" y="51.11" width="100" height="50" style="fill: none; stroke: #00a04d; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <g style="fill: none; opacity: .1;">
+      <g style="clip-path: url(#h); fill: none;">
+        <path d="m423.01,101.11h100V1.11c-50,0-50,100-100,100" style="fill: none;"/>
+      </g>
+    </g>
+    <rect x="423.01" y="1.11" width="100" height="100" style="fill: none; stroke: #929497; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <g style="fill: none; opacity: .1;">
+      <g style="clip-path: url(#i); fill: none;">
+        <path d="m423.01,34.45v66.67h100V34.45c-12.5,0-12.5,33.33-25,33.33s-12.5-33.33-25-33.33-12.5,33.33-25,33.33-12.5-33.33-25-33.33" style="fill: none;"/>
+      </g>
+    </g>
+    <path d="m423.01,34.45v66.67h100V34.45c-12.5,0-12.5,33.33-25,33.33s-12.5-33.33-25-33.33-12.5,33.33-25,33.33-12.5-33.33-25-33.33Z" style="fill: none; stroke: #e9078a; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <rect x="423.01" y="1.11" width="100" height="100" style="fill: none; stroke: #929497; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <path d="m423.01,34.45v66.67h100V34.45c-12.5,0-12.5,33.33-25,33.33s-12.5-33.33-25-33.33-12.5,33.33-25,33.33-12.5-33.33-25-33.33Z" style="fill: none; stroke: #e9078a; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <g style="fill: none; opacity: .1;">
+      <g style="clip-path: url(#j); fill: none;">
+        <path d="m423.01,26.11v75h100V26.11c-25,0-25,50-50,50s-25-50-50-50" style="fill: none;"/>
+      </g>
+    </g>
+    <path d="m423.01,26.11v75h100V26.11c-25,0-25,50-50,50s-25-50-50-50Z" style="fill: none; stroke: #00a54f; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <path d="m423.01,26.11v75h100V26.11c-25,0-25,50-50,50s-25-50-50-50Z" style="fill: none; stroke: #29abe2; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <path d="m423.01,101.11h100V1.11c-50,0-50,100-100,100Z" style="fill: none; stroke: #ed2024; stroke-miterlimit: 10; stroke-width: .5px;"/>
+    <g style="fill: none; opacity: .1;">
+      <g style="clip-path: url(#k); fill: none;">
+        <rect x="423.38" y="51.49" width="99.25" height="49.25" style="fill: none;"/>
+        <path d="m522.26,100.36h-98.5v-48.5h98.5v48.5Zm.75-49.25h-100v50h100v-50Z" style="fill: none;"/>
+      </g>
+    </g>
+    <rect x="423.01" y="51.11" width="100" height="50" style="fill: none; stroke: #ea2027; stroke-miterlimit: 10; stroke-width: .5px;"/>
+  </g>
+</svg>

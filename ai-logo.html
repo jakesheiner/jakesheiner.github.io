@@ -28,63 +28,35 @@
     <main class="details">
         
         <section>
-            <a href="https://staging.dubberly.com/jake/230822-Programming_with_ChatGPT/programming%20with%20chatGPT.pdf"> Check out the full presentation here.</a>
-
-            <h2>My first experience leveraging AI to do design work.</h2>
-            <p>
-                At Dubberly Design I was working with a client called DrumWave, a brazilian data company. Their logo was a seven set venn diagram, with each set assigned a color, and each section was the average color of the overlapping sets. 
-            </p>
-            <img src="images/drumwave_logo.svg">
-            <p>
-                This results in 128 colors in the logo.
-
-            </p>
-            <p>
-                Originally the seven colors were mathematically calculated to evenly split the color wheel, but this resulted in them being not quite optically balanced.
-            </p>
+            
 
             <p>
-                So I was tasked with redrawing the logo with a  new set of optically balanced seven colors. To calculate the resulting averages by hand would have taken hours, and would need to be done for every iteration.
+                The logo is a seven set Venn diagram, where the outer sets originally  were 7  colors evenly spaced around the color wheel. However, the colors were not optically balanced, there were two greens that were very close to each other. Recoloring the logo was not trivial, as the other 121 overlaps are the average color of the overlapping sets, meaning any shift in the outer colors requires all inner sections to be recolored. I created a program to replace all the colors in an svg of the logo based on any seven colors.
             </p>
-            <p>
-                I knew this could be automated, so I turned to the then new chatGPT to figure out how. 
-            </p>
-            <p>
-                At first I had it create a python program to take in a set of seven hexcodes, and return the 128 average hex codes.
-
-            </p>
-            <img src="images/thread1.png">
-
-            <p>
-                Then I had it return an svg of the 128 color palettes, so one could use the eyedropper tool to recolor the logo.
-            </p>
-            <img src="images/color_palette.svg">
-            <p>
-                Finally I had it create a program that takes as an input 7 colors, calculates the 128 colors, and recolors a given svg file provided to it. This way I had fully automated the process of creating logo variations.
-
-            </p>
-            <img src="images/automated.png">
-            <p>
-                This was the first time I had used an LLM for something useful in the design process, and was a revelation for me and for the other designers at Dubberly Design.
-
-            </p>
+            <br>
+            <a href="https://staging.dubberly.com/jake/230822-Programming_with_ChatGPT/programming%20with%20chatGPT.pdf" >
+                <button class="button-24" role="button">Check out the full presentation</button>
+            </a>
+            <br>
+            <br>
+            <br>
             <img src="images/ai_logo_shift.svg">
-            <div class = "row">
-                <div class = "column">
-                    <p>
-                        What appears to be a simple change is made laborious by the many inner sets that must be recolored:                    </p>
-                </div>
-                <div class = "column">
-                    </div>
-            </div>
+            
+                    <p style="color: #aaa;">
+                        What appears to be a simple change is made laborious by the many inner sets that must be recolored.
+                                      </p>
+               
+               
+             <br>   
+            <br>
+            <br>
             <img src="images/drumwave_logo2.svg">
-            <div class = "row">
-                <div class = "column">
-                    <p>
-                        After the several iterations of the program, creating new versions of the logo became trivial:                </div>
-                <div class = "column">
-                    </div>
-            </div>
+           
+                      <p style="color: #aaa;"> After the several iterations of the program, creating new versions of the logo became trivial.            
+                    </p>
+                    <br>
+                    <br>
+                    <br>
             <div class = "row">
                 <div class = "column">
                     <p>
@@ -100,87 +72,12 @@
     </section>
     <section class="table" >
         <img src="images/ai_logo_table1.svg" >
+        <br>
+        <br>
         <img src="images/ai_logo_table2.svg" >
        </section>
-   <section id="two-column">
-    <hr>
-              <div class="row">
-                <div class="column left ">
-                    <h3>First I made sure it understood the problem:</h3>
-                    <small>I am making a picture of a seven set venn diagram.
-                        Every section overlaps every other section in all possible combinations,
-                        resulting in 128 individual sections. 
-                        If each of the seven sets is a specific color (hex value), 
-                        and every section is the average color of the sets that overlap in it, 
-                        how can I calculate the colors for all 128 sections?
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                    </small>
-                 
-                </div>
-                <div class="column right gray">
-                    
-                    </div>
-              </div>
-              <div class="row">
-                <div class="column left">
-                    <h3>Then I asked it to make a program:</h3>
-                   <small>can you write a program that does this?</small> 
-                </div>
-                <div class="column right mid gray">
-                    <section>
-                    <h3>Program response output:</h3>
-                    <small >from itertools import combinations<br>
-                        # Hex color values for each set<br>
-                        <br>
-                        colors = {<br>
-                         'C1': '#FF0000',<br>
-                         'C2': '#00FF00',<br>
-                         'C3': '#0000FF',<br>
-                         'C4': '#FFFF00',<br>
-                         'C5': '#FF00FF',<br>
-                         'C6': '#00FFFF',<br>
-                         'C7': '#FFFFFF'<br>
-                        }<br>
-                        <br>
-                        # Function to calculate average color<br>
-                        def calculate_average_color(combination):<br>
-                        total_r, total_g, total_b = 0, 0, 0<br>
-                        num_sets = sum(combination)<br>
-                    </small>
-                </section>
-                    </div>
-                    
-              </div>
-
-              <div class="row">
-                <div class="column left">
-                    <h3>Then a program that returns a .svg <br>
-                        of the color set:</h3>
-                   <small>can you edit this code
-                    so that the rectangles do not overlap?Now can you write the program,
-                    but instead of outputting a list,
-                    it outputs an .svg file of all the color combinations
-                    as squares, organized by how many colors
-                    are in the combinations?</small> 
-                </div>
-                <div class="column right gray" >
-                    <section>
-                    <h3>Program response output:</h3>
-                    <img src="images/color_grid.svg" alt="color grid" width="50%" >
-                    <small>
-                    </small>
-                </section>
-                    </div>
-                    
-              </div>
-   </section>
-  
-   <section class="table">
-    <img src="images/ai_logo_table1.svg">
-   </section>
+   
+       
     </main>
 
     
