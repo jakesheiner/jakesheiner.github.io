@@ -184,12 +184,15 @@ img {
     display: flex;
     flex-direction: column-reverse;
     color: #333;
-    align-items: flex-start;
+    align-items: flex-end;
     gap: 1rem;
     border-bottom: 0.5px solid #bbb;
     padding-bottom: 0;
 }
-
+#hero img{
+    padding:4rem;
+    padding-top:0;
+}
 @media only screen and (min-width: 800px) {
     #hero {
         flex-direction: row;
