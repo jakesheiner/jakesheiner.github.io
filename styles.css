@@ -283,6 +283,8 @@ img {
 
 
   .portfolio {
+    border-bottom: 0.5px solid #bbb;
+
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -512,4 +514,10 @@ flex-direction: column;
 
 #gridCanvas{
     margin-bottom: 1rem;
+}
+
+.art{
+   
+    text-align: center;
+    width:70%;
 }

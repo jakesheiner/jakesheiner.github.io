@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="header-container">
-            <h1>Jake Sheiner</h1>
+            <h1>JAKE SHEINER</h1>
             <nav>
                 <ul>
                     <a href="index.html" class="bi bi-arrow-left"> Home</a>
@@ -28,18 +28,23 @@
     <main class = "details">
         
         <section>
-            <a href="https://github.com/jakesheiner/myQuilt">check out the Github here</a>
+            <div style="text-align: center;">
+                <a href="https://github.com/jakesheiner/myQuilt">check out the Github here</a>
+            </div>
             <h2>How it works:</h2>
-            <img src="images/MyQuiltMap.svg" alt="myQuilt's initial diagram">
-            <p>
-                At first, the concept was to have three tabs, navigatble by a tab bar at the bottom: a journal view, with swipable pages,
-                a grid view, that would later become the quilt, and a text entry view.
-            </p>
             
-                    <p>The App opens to the quilt view screen, where the user can view their past entries as a grid, or quilt of colors and images. To generate a new entry, the user taps the plus icon at the bottom to bring up the text entry view, and enters their thoughts. The text is passed to the GPT-4 API, which generates a json file with four parts: a hexcode for the chosen color, a name for the color, an explanation for why the color was chosen, and a prompt for an image generator for a quilt square based on the entry. </p>
+            <img src="images/MyQuiltMap.svg" alt="myQuilt's initial diagram">
+           
+                
+            
+            
+                    <p>The App opens to the quilt view screen, where the user can view their past entries as a grid, or quilt of colors and images. <br><br>
+                        When a the user taps one of the quilt squares, they enter the journal view, where they can swipe through their entries like a book, viewing both the color, image and actual text entry.
+                        <br><br>
+                        To generate a new entry, the user taps the plus icon at the bottom to bring up the text entry view, and enters their thoughts. The text is passed to the GPT-4 API, which generates a json file with four parts: a hexcode for the chosen color, a name for the color, an explanation for why the color was chosen, and a prompt for an image generator for a quilt square based on the entry. </p>
                <br>
                     <p>The first three items are added to the new entry, and the prompt is sent to the Dall-e 2 API, which generates an image, and adds that to the entry.
-                        Then the new entry is added to the entries array ( a list of all the entries thus far) which is used to render the quilt and journal views.</p>
+                        Then the new entry is added to the entries array (a list of all the entries thus far) which is used to render the quilt and journal views.</p>
               
               
     </section>
@@ -66,7 +71,7 @@
         </div>
         <div class ="column">
             <ul>
-                <li>This led me to the an important insight: I could get rid of the bottom task bar altogether, and use the tapping of the quilt squares to navigate to the journal view, at the page corresponding to the tapped square. The user can still swipe though like a book, but the overall interface is simplified and more intuitive.
+                <li>This led me to the an important insight: I could get rid of the bottom tab bar altogether, and use the tapping of the quilt squares to navigate to the journal view, at the page corresponding to the tapped square. The user can still swipe though like a book, but the overall interface is simplified and more intuitive.
                 </li>
                 </ul>
         </div>
@@ -75,7 +80,7 @@
     <div class = "row">
         <div class ="column right">
             <ul>
-                <li>users’ journal entries were short,<br>leaving a lot of unused space on journal view pages.
+                <li>Users’ journal entries were short,<br>leaving a lot of unused space on journal view pages.
                 </li>
                 </ul>
         </div>
@@ -90,7 +95,7 @@
     <div class = "row">
         <div class ="column right">
             <ul>
-                <li>users were confused by long loading times <br>before new entries appeared in the quilt view
+                <li>Users were confused by long loading times <br>before new entries appeared in the quilt view
                 </li>
                 </ul>
         </div>
@@ -174,8 +179,14 @@
       
     </div>
 </div>
-
-    
+<h2>
+    Before any coding or designing, I made this initial sketch diagram.
+</h2>
+<img src="images/myquilt_map_og.svg" alt="the quilt view">
+<p>
+    At first, the concept was to have three tabs, navigatble by a tab bar at the bottom: a journal view, with swipable pages,
+    a grid view, that would later become the quilt, and a text entry view.
+</p>
    
 
     <section>
