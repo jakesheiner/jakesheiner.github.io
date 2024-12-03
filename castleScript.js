@@ -6,6 +6,18 @@ const canvas = document.getElementById('gridCanvas');
   const grid = Array.from({ length: rows }, () => Array(cols).fill(false));
   let isDragging = false;
 
+  // Add clear button functionality
+document.getElementById('clearCanvas').addEventListener('click', () => {
+  // Reset the grid array
+  for (let row = 0; row < rows; row++) {
+      for (let col = 0; col < cols; col++) {
+          grid[row][col] = false;
+      }
+  }
+  // Redraw the empty grid
+  drawGrid();
+});
+
   // Preload two versions of each SVG image (with and without window), plus one piece with no window version
   const svgImages = {
     tower: [new Image(), new Image()],
@@ -130,6 +142,15 @@ const canvas = document.getElementById('gridCanvas');
     return "stack"; // You can modify the logic to place the gate conditionally
   }
 
+  // shift-click to clear function
+  function clearSquare(row, col) {
+    if (row >= 0 && row < rows && col >= 0 && col < cols && grid[row][col]) {
+        grid[row][col] = false;
+        drawGrid();
+    }
+}
+  //end shift-click to clear
+
   function lightUpSquare(row, col) {
     if (row >= 0 && row < rows && col >= 0 && col < cols && !grid[row][col]) {
       grid[row][col] = true;
@@ -137,27 +158,37 @@ const canvas = document.getElementById('gridCanvas');
     }
   }
 
-  canvas.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    const col = Math.floor(e.offsetX / squareSize);
-    const row = Math.floor(e.offsetY / squareSize);
-    lightUpSquare(row, col);
-  });
-
-  canvas.addEventListener('mousemove', (e) => {
-    if (isDragging) {
-      const col = Math.floor(e.offsetX / squareSize);
-      const row = Math.floor(e.offsetY / squareSize);
-      lightUpSquare(row, col);
-    }
-  });
-
   canvas.addEventListener('mouseup', () => {
     isDragging = false;
   });
+
+
+canvas.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  const col = Math.floor(e.offsetX / squareSize);
+  const row = Math.floor(e.offsetY / squareSize);
+  if (e.shiftKey) {
+      clearSquare(row, col);
+  } else {
+      lightUpSquare(row, col);
+  }
+});
+
+canvas.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+      const col = Math.floor(e.offsetX / squareSize);
+      const row = Math.floor(e.offsetY / squareSize);
+      if (e.shiftKey) {
+          clearSquare(row, col);
+      } else {
+          lightUpSquare(row, col);
+      }
+  }
+});
 
   canvas.addEventListener('mouseleave', () => {
     isDragging = false;
   });
 
   drawGrid();
+
