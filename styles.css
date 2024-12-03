@@ -509,3 +509,7 @@ flex-direction: column;
     max-width: 450px;
 
 }
+
+#gridCanvas{
+    margin-bottom: 1rem;
+}
