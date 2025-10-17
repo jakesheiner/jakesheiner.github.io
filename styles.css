@@ -331,7 +331,7 @@ img {
 }
 
 .project-text {
-    flex: 1;
+    flex: 0.6;
     display: flex;
     flex-direction: column;
     padding-right:4rem;
@@ -354,6 +354,19 @@ p{
     color: #555;
 }
 
+#hero .hero-intro {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+#hero .project-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
 .small {
     display: inline-block;
 font-weight: light;
@@ -364,7 +377,7 @@ color:#949494
 
 .project-image {
     
-    flex: 1;
+    flex: 1.4;
     display: flex;
     align-items: flex-start;
     justify-content: left;
@@ -486,16 +499,12 @@ header h1{
   margin-bottom:1rem;
 }
 
-.button-24:hover,
-.button-24:active {
-  background-color: #555;
-  background-position: 0 0;
-  color: #FAF9F6;
-  ;
+.button-24:hover {
+  transform: scale(1.05);
 }
 
 .button-24:active {
-  opacity: .5;
+  transform: scale(0.98);
 }
 
 .castle-demo{

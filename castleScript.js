@@ -55,9 +55,9 @@ document.getElementById('clearCanvas').addEventListener('click', () => {
     // Draw background cells first
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < cols; col++) {
-        ctx.fillStyle = "#87CEEB"; // Sky blue background for the grid
+        ctx.fillStyle = "#00bfff"; // Sky blue background for the grid
         ctx.fillRect(col * squareSize, row * squareSize, squareSize, squareSize);
-        ctx.strokeStyle = '#ccc';
+        ctx.strokeStyle = '#fff';
         ctx.strokeRect(col * squareSize, row * squareSize, squareSize, squareSize);
       }
     }
