@@ -331,7 +331,7 @@ img {
 }
 
 .project-text {
-    flex: 0.6;
+    flex: 1;
     display: flex;
     flex-direction: column;
     padding-right:4rem;
@@ -377,7 +377,7 @@ color:#949494
 
 .project-image {
     
-    flex: 1.4;
+    flex: 1;
     display: flex;
     align-items: flex-start;
     justify-content: left;
@@ -473,7 +473,7 @@ header h1{
 /* CSS */
 .button-24 {
  
-  border: 1px solid #555;
+  border: 0.5px solid #555;
  background-color: #FAF9F6;
   
   border-radius: 10px;
