@@ -5,14 +5,24 @@
     box-sizing: border-box;
 }
 
+/* Ensure consistent rendering across browsers */
+html {
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
 /* Body Styles */
 body {
+    width: 100%;
     background-color: #FAF9F6;
-    font-family:  'Nunito',Arial, sans-serif;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
     line-height: 1.3;
     margin: 0;
     padding: 0;
-   
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .header-container {
@@ -50,8 +60,14 @@ body {
    
 }
 .ui-pictures img{
-    max-width:33%;
-    object-fit:contain;
+    width: calc(33.333% - 0.67rem);
+    max-width: calc(33.333% - 0.67rem);
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+    object-position: center;
+    flex: 1 1 0;
+    min-width: 0;
 }
 
 .ui-pictures video{
@@ -60,17 +76,16 @@ body {
 }
 /* Header Styles */
 header {
-    width:80%;
-    
+    width: 80%;
+    max-width: 100%;
     color: #333;
     padding: 1rem;
     display: flex;
-    
-   justify-content: space-between;
+    justify-content: space-between;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-
+    box-sizing: border-box;
 }
 
 l{
@@ -81,16 +96,27 @@ l{
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 0.5rem;
+    margin: 0;
 }
 
 nav ul li a {
     color: #333;
     text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ee3062;
 }
 
 /* Main Content Styles */
@@ -121,10 +147,11 @@ main h1{
     padding:1rem;
 }
 main{
-    
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -149,15 +176,26 @@ footer {
 }
 
 img {
-
     max-width: 100%; /* Ensures the image is responsive */
     height: auto; /* Maintains the aspect ratio */
     display: block;
-   
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: auto;
+}
+
+#about .column:last-child img {
+    max-width: none;
 }
 
 .details img {
     margin-bottom: 3rem;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    object-position: center;
 }
 .details{
     width:60%;
@@ -170,13 +208,45 @@ img {
 }
 @media only screen and (max-width: 800px) {
     main{
-        width: 80%;
+        width: 100%;
     }
 
     header{
         width: 80%;
     }
     
+    #hero {
+        align-items: center;
+    }
+    
+    #hero img {
+        width: 50% !important;
+        padding: 0;
+        margin: 0 auto;
+        display: block;
+    }
+
+#about .row {
+    align-items: flex-start !important;
+}
+
+#about .column:last-child {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#about .column:last-child img {
+    max-height: 150px !important;
+    height: 150px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+}
+
+    .project-text {
+        padding-right: 0rem !important;
+    }
 }
 
 #hero {
@@ -189,10 +259,7 @@ img {
     border-bottom: 0.5px solid #bbb;
     padding-bottom: 0;
 }
-#hero img{
-    padding:4rem;
-    padding-top:0;
-}
+
 @media only screen and (min-width: 800px) {
     #hero {
         flex-direction: row;
@@ -284,14 +351,14 @@ img {
 
   .portfolio {
     border-bottom: 0.5px solid #bbb;
-
     text-align: center;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
-    
     display: flex;
     flex-direction: column;
     gap: 20px;
+    box-sizing: border-box;
 }
 
 .project {
@@ -310,33 +377,92 @@ img {
     
 }
 
+.project-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    width: 100%;
+}
+
 .project h2{
     text-align: left;
-   font-size: 2.5rem;
+    font-size: 2.5rem;
     width: 100%;
     color: #333;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    font-weight: 400;
+}
+
+.project-header h2 {
+    width: auto;
+    flex: 0 1 auto;
+}
+
+
+.gallup-logo {
+    height: 1.25rem;
+    width: auto;
 }
 .project-content {
     text-align: left;
-    gap: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+    gap: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+   
+    padding-top: 2rem;
+    border-top: 0.5px solid #ddd;
+    grid-auto-flow: row;
 }
-.project:hover {
-   
-   /* box-shadow: 0 16px 30px rgba(0, 0, 0, 0.05);*/
-    
-   
+
+.project-text-wrapper {
+    display: grid;
+    grid-template-columns: 1.6fr 0.5fr;
+    gap: 0.75rem;
+    align-items: flex-start;
 }
 
 .project-text {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    padding-right:4rem;
-    
-   
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+    margin-top: 0;
+    min-width: 0;
+}
+
+.project-tags {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    padding-top: 0;
+    min-width: 0;
+    white-space: nowrap;
+}
+
+.project-tags .small {
+    white-space: normal;
+}
+
+.project-tags .small {
+    display: block;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.project-image {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+}
+
+.project-text > div:has(.button-24) {
+    margin-top: auto;
 }
 
 .project-text h2 {
@@ -347,47 +473,56 @@ img {
 p{
     font-size:1rem;
 }
-#hero .project-text p,
+/* #hero .project-text p,
 .project-text p {
     margin-bottom:1rem;
     font-size: 1rem;
     color: #555;
+} */
+
+.project-text p {
+    margin-bottom: 2rem;
+    margin-top: 0;
 }
 
-#hero .hero-intro {
+.project-text p:first-child {
+    margin-top: 0;
+}
+
+#hero .hero-intro,
+.hero-intro {
     font-size: 1rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 2rem;
+    font-weight: 400;
+    color: #949494;
+    margin-bottom: 0;
     line-height: 1.2;
 }
 
-#hero .project-text p {
+/* #hero .project-text p {
     font-size: 1rem;
+    line-height: 1.6;
+} */
+
+.small,
+p.small {
+    display: inline-block;
+    font-weight: light;
+    line-height: 1.2 !important;
+    font-size: 1rem;
+    color:#949494;
+}
+
+.project-tags .small {
+    display: block;
     line-height: 1.6;
 }
 
-.small {
-    display: inline-block;
-font-weight: light;
-line-height: 1.2 !important;
-font-size: .7rem;
-color:#949494
-}
-
 .project-image {
-    
-    flex: 1;
     display: flex;
     align-items: flex-start;
     justify-content: left;
     max-height: 32rem;
-   
-
-padding-right: 2rem;
-    
-   
-   
+    padding-right: 2rem;
 }
 
 .project-image img{
@@ -396,14 +531,14 @@ padding-right: 2rem;
   display: block;
 }
 .ui-pictures{
-    
-   
     display: flex;
-    flex:1;
+    flex: 1;
     margin-bottom: 2rem;
     align-items: flex-start;
-    
-    
+    gap: 1rem;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 100%;
 }
 
 em{
@@ -411,6 +546,31 @@ font-weight: light;
 font-style:normal;
 color: #949494;
 font-size: .7rem;
+}
+
+#iterations .column p {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+#iterations .column p:first-child {
+    margin-top: 0;
+}
+
+#iterations .column em {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#iterations .column img {
+    width: 100%;
+   
+   
+    margin-bottom: 1rem;
 }
 
 picture_with_caption img{
@@ -432,19 +592,40 @@ ul{
 }
 
 header h1{
-    font-family: futura;
+    font-family: 'Futura', 'Futura-Medium', 'Century Gothic', 'Trebuchet MS', Arial, sans-serif;
     color: #ee3062;
-    font-style: condenced;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.05em;
 }
 @media (max-width: 768px) {
     .project-content {
-        flex-direction: column;
-      
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 2rem;
     }
 
-    .project-text, .project-image {
-        flex: 1; /* Equal widths for stacked layout */
-        padding-left:0;
+    .project-text-wrapper {
+        grid-column: 1;
+        grid-row: 1;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .project-image {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+    }
+
+    .project-tags, .project-text, .project-image {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .project-text {
+        padding-right: 0;
+        margin-bottom: 1rem;
     }
 
     .project-image img {
@@ -472,17 +653,17 @@ header h1{
 
 /* CSS */
 .button-24 {
- 
   border: 0.5px solid #555;
- background-color: #FAF9F6;
-  
-  border-radius: 10px;
+  background-color: #FAF9F6;
+  border-radius: 60px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
   color: #555;
   cursor: pointer;
-  display: inline-block;
-  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 16px;
@@ -496,11 +677,25 @@ header h1{
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button-24 i {
+  transition: transform 0.3s ease;
+}
+
+.button-24:hover i {
+  transform: translateX(3px);
 }
 
 .button-24:hover {
   transform: scale(1.05);
+}
+
+.button-24:hover i {
+  transform: translateX(5px);
 }
 
 .button-24:active {
@@ -526,7 +721,16 @@ flex-direction: column;
 }
 
 .art{
-   
     text-align: center;
-    width:70%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.project-text .bigger,
+.bigger {
+    font-size: 1.5rem;
+  
+    margin-bottom: 1rem;
 }

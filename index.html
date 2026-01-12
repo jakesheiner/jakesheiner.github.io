@@ -7,74 +7,156 @@
     <title>Jake Sheiner</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
    
 </head>
 <body>
     <header>
         <div class="header-container">
-            <h1>JAKE SHEINER</h1>
-            
+            <h1>jake sheiner</h1>
+            <nav>
+                <ul>
+                    <li><a href="#work">work</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="playground.html">playground</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
       
-        <section id="hero">
-           
-          <div>
-            <p class="hero-intro">Designer by day. Artist by night.</p>
+        <section id="about">
+            <div class="row">
+                <div class="column">
+                    <p class="hero-intro">Designer by day. Artist by night.</p>
+                    <p>Currently pursuing a Master's in Design @ UC Berkeley.</p>
+<br>
+                    <div class="project-text">
+                        <p class="bigger">I blend visual design with systems thinking to solve complex problems. Learning fast and staying curious.</p>
 
-            <div class="project-text">
-            <p>I blend visual design with systems thinking to solve complex problems. Fast learner. Detail-obsessed. Always curious.</p>
+                       
+                       
+                      
+                    </div>
 
-            <p>I create digestible diagrams for complex systems, research emerging technologies like LLMs and image generators, and build intuitive interfaces. Currently exploring iOS development—recently launched myQuilt, an AI-powered journaling app.</p>
-            
-            
-            <p>When I'm not designing, I'm making art—painting, drawing, screen printing, and animating.</p>
-
-            <p>Scroll to explore my work.</p>
-        </div>
-        <br>
-            <div class="contactInfo">
-                
-               
-                <a href="https://www.linkedin.com/in/jacob-sheiner-052828218" >
-                    <button class="button-24" role="button">linkedIn</button>
-                </a>
-                <a href="mailto:jacob.sheiner@gmail.com" >
-                    <button class="button-24" role="button">jacob.sheiner@gmail.com</button>
-                </a>
+                    <div class="contactInfo">
+                        <a href="https://www.linkedin.com/in/jacob-sheiner-052828218" >
+                            <button class="button-24" role="button">linkedIn</button>
+                        </a>
+                        <a href="mailto:jacob.sheiner@gmail.com" >
+                            <button class="button-24" role="button">jacob.sheiner@gmail.com</button>
+                        </a>
+                    </div>
+                    <p>Scroll to explore my work.</p>
+                </div>
+                <div class="column">
+                    <img src="images/profile_pic_circle.png" style="max-height: 300px;" alt="a picture of jake">
+                </div>
             </div>
-        </div>
-            <img src="images/profile_pic_circle.png" width = 50%  alt="a picture of jake">
-            
         </section>
        
-            <h1>Design Work</h1>
+            <h1 id="work">Design Work</h1>
             <div class="portfolio">
+                <a href="muse.html" class="project">
+                    
+                    <div class="project-header">
+                        <h2>Muse</h2>
+                       
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-text-wrapper">
+                            <div class="project-text">
+                        
+                       <p class="bigger">
+                        A gentle guide on the journey from mood to melody.
+                        Muse takes the users emotions as input, and converts them into music.
+                       </p>
+                        
+                        <div>
+                            <button class="button-24" role="button">check it out! <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                       
+                    </div>
+                            <div class="project-tags">
+                                <p class="small">
+                                    systems architecture<br>
+                                    product design<br>
+                                    API integration<br>
+                                    python<br>
+                                    microcontrollers
+                                </p>
+                            </div>
+                        </div>
+                    <div class="project-image">
+                       <img src="images/muse_hero.jpg" alt="the muse view">
+                      
+                    </div>
+                </div>
+                </a>
+
+                <a href="myQuilt.html" class="project">
+                    
+                    <div class="project-header">
+                        <h2>myQuilt</h2>
+                      <!--  <img src="images/gallup logo.png" alt="Gallup logo" class="gallup-logo"> -->
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-text-wrapper">
+                            <div class="project-text">
+                        
+                       <p class="bigger">
+                        An AI powered journaling app, creating a dynamic history of the users emotions and memories.
+                       </p>
+                        
+                        <div>
+                            <button class="button-24" role="button">check it out! <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                       
+                    </div>
+                            <div class="project-tags">
+                                <p class="small">
+                                    iOS development<br>
+                                    Mobile interface design<br>
+                                    API integration<br>
+                                    SwiftUI
+                                </p>
+                            </div>
+                        </div>
+                    <div class="project-image">
+                        <div class="ui-pictures">
+                            <img src="images/quilt_view_loading.png" alt="the quilt view">
+                            <img src="images/journal_view.png" alt="the journal view">
+                            <img src="images/text_view.png" alt="the text entry view">
+                        </div>  
+                      
+                    </div>
+                </div>
+                </a>
+
                 <div class="project">
                     
                     <h2>Interactive Castle Builder</h2>
-                    <p class="small">
-                         
-                        SVG Graphics | 
-                        Procedural Generation | 
-                        Interactive Design
-                    </p>
                     <div class="project-content">
-                        <div class="project-text">
-                            <p><em>Goal:</em><br>
+                        <div class="project-text-wrapper">
+                            <div class="project-text">
+                            <p class="bigger">
                                 Build your own castle by clicking and dragging on the grid. The builder intelligently places towers, walls, arches, and windows based on the surrounding pieces.
                             </p>
-                            <p>
-                                <em>Motivation:</em><br>
-                                Created as an experiment to explore procedural architecture generation and interactive design, for a prototype of an app startup I have been collaborating on.
-                            </p>
                             
-                            <p style="font-weight: bold"><br>click and drag the canvas to try it out!</p>
+                            <p style="font-weight: bold">click and drag the canvas to try it out!</p>
+                            </div>
+                            <div class="project-tags">
+                                <p class="small">
+                                    SVG Graphics<br>
+                                    Procedural Generation<br>
+                                    Interactive Design
+                                </p>
+                            </div>
                         </div>
                         <div class="project-image castle-demo" style="min-width: 300px;">
                             <canvas id="gridCanvas" width="450" height="450"></canvas>
@@ -91,72 +173,29 @@
                         </div>
                     </div>
                 </div>
-                
-                <a href="myQuilt.html" class="project">
-                    
-                    <h2>myQuilt, an AI powered journaling app</h2>
-                    <p class="small">
-                        iOS development | 
-                        Mobile interface design | 
-                        API integration | 
-                        SwiftUI
-                    </p>
 
-                    <div class="project-content">
-                       
-                    <div class="project-text">
-                        
-                        <p><em>Goal</em><br>
-                            Create a gamified journaling app, which uses OpenAI’s APIs to generate a color and image that represent the mood of the journal entries. The created colors and images provide a ‘reward’ for journaling, intended to make journaling a more fun habit. The user can flip through the journal as pages, or view a thumbnail quilt of a visual representation of their mood over time.
-                            
-                            </p>
-                            <p>
-                                <em>Motivation</em><br>
-I made the app for fun, because I wanted to learn iOS development, become familiar with using APIs, especially those having to do with AI. I also wanted to start journaling, and had the idea to create a journaling app that provides some feedback for entries.
-                            </p>
-                           <br><br>
-                       
-                        
-                        <div>
-                            <button class="button-24" role="button">check it out!</button>
-                        </div>
-                       
-                    </div>
-                    <div class="project-image">
-                        <div class="ui-pictures">
-                            <img src="images/quilt_view_loading.png" alt="the quilt view">
-                            <img src="images/journal_view.png" alt="the journal view">
-                            <img src="images/text_view.png" alt="the text entry view">
-                        </div>  
-                      
-                    </div>
-                </div>
-                </a>
-        
                 <a href="vennDiagrams.html" class="project">
-                    <h2>Visializing high set Venn Diagrams - a poster</h2>
-                    <p class="small">
-                        Graphic design | 
-                        Research | 
-                        Presentation
-                    </p>
+                    <h2>Visualizing high set Venn Diagrams</h2>
                     <div class="project-content">
+                        <div class="project-text-wrapper">
+                            <div class="project-text">
                         
-                        <div class="project-text">
-                        
-                            <p><em>Goal</em><br>
-Create a poster and accompanying presentation showing the increasing complexity of drawing Venn Diagrams for many sets.                                
-                                </p>
-                                <p>
-                                    <em>Motivation</em><br>
-The poster was an exploration of the visual reepresentations of set theory. And it serves as a beautiful artifact to represent the brand of Dubberly Design Office.                                 </p>
-                               <br><br>
-                           
+                            <p class="bigger">
+                                A poster and presentation exploring the increasing complexity of drawing Venn Diagrams for many sets, serving as a beautiful artifact for Dubberly Design Office.
+                            </p>
                             
                             <div>
-                                <button class="button-24" role="button">check it out!</button>
+                                <button class="button-24" role="button">check it out! <i class="bi bi-arrow-right"></i></button>
                             </div>
                            
+                        </div>
+                            <div class="project-tags">
+                                <p class="small">
+                                    Graphic design<br>
+                                    Research<br>
+                                    Presentation
+                                </p>
+                            </div>
                         </div>
                     <div class="project-image">
                    
@@ -168,27 +207,26 @@ The poster was an exploration of the visual reepresentations of set theory. And 
                 </a>
 
                 <a href="ai-logo.html" class="project">
-                    <h2>Automating the logo iteration process using AI</h2>
-                    <p class="small">
-                        Logo creation | 
-                        Automation | 
-                        Prompt engineering | 
-                        Presentation
-                    </p>
+                    <h2>Automating logo iteration with AI</h2>
                     <div class="project-content">
-                        
-                    <div class="project-text">
+                        <div class="project-text-wrapper">
+                            <div class="project-text">
                        
-                        <p><em>Goal:</em><br>
-                            The goal of this project was to redesign a logo for a data company called DrumWave. I created a program to automate this surprisingly complicated process, and in the process discovered how useful the at the time new ChatGPT was as a tool for design.
+                            <p class="bigger">
+                                Redesigning a seven-set Venn diagram logo for DrumWave required automating color replacement across 121 overlapping sections. This project revealed how useful ChatGPT could be as a design tool.
                             </p>
-                            <p>
-                                <em>Motivation:</em><br>
-The logo is a seven set Venn diagram, where the outer sets originally  were 7  colors evenly spaced around the color wheel. However, the colors were not optically balanced, there were two greens that were very close to each other. Recoloring the logo was not trivial, as the other 121 overlaps are the average color of the overlapping sets, meaning any shift in the outer colors requires all inner sections to be recolored. I created a program to replace all the colors in an svg of the logo based on any seven colors.
-                            </p>
-                            <br><br>
+                            
                             <div>
-                                <button class="button-24" role="button">check it out!</button>
+                                <button class="button-24" role="button">check it out! <i class="bi bi-arrow-right"></i></button>
+                            </div>
+                        </div>
+                            <div class="project-tags">
+                                <p class="small">
+                                    Logo creation<br>
+                                    Automation<br>
+                                    Prompt engineering<br>
+                                    Presentation
+                                </p>
                             </div>
                     </div>
                     <div class="project-image">
@@ -200,24 +238,25 @@ The logo is a seven set Venn diagram, where the outer sets originally  were 7  c
                 </a>
 
                 <a href="slime.html" class="project">
-                    <h2>Using slime mold to create rail network maps of the US</h2>
-                    <p class="small">
-                       Acrylic fabrication | 
-                        Fungus growing 
-                        
-                    </p>
+                    <h2>Slime mold rail networks</h2>
                     <div class="project-content">
-                        <div class="project-text">
+                        <div class="project-text-wrapper">
+                            <div class="project-text">
                        
-                            <p><em>Goal:</em><br>
-Create a network between large metro areas in the United States using oats connected by the slime mold Physarum polycephalum.                              </p>
-                                <p>
-                                    <em>Motivation:</em><br>
-Inspired by a 2010 experiment by scientists in Tokyo, I wanted to explore the concept of using biological means to plan an engineering project. I was fascinated by the idea of harnessing 'natural' intelligence as an alternative to digital computation. It was also a fun opportunity to practice with acrylic fabrication.                                 </p>
-                                <br><br>
+                            <p class="bigger">
+                                Creating a network between large metro areas using the slime mold Physarum polycephalum, exploring biological intelligence as an alternative to digital computation.
+                            </p>
+                            
                                 <div>
-                                    <button class="button-24" role="button">check it out!</button>
+                                    <button class="button-24" role="button">check it out! <i class="bi bi-arrow-right"></i></button>
                                 </div>
+                        </div>
+                            <div class="project-tags">
+                                <p class="small">
+                                    Acrylic fabrication<br>
+                                    Fungus growing
+                                </p>
+                            </div>
                         </div>
                         <div class="project-image">
                    
@@ -231,24 +270,26 @@ Inspired by a 2010 experiment by scientists in Tokyo, I wanted to explore the co
 
                 <a href="diagrams.html" class="project">
                     <h2>Systems diagrams and presentations</h2>
-                    <p class="small">
-                        Graphic design | 
-                        Research | 
-                        Presentation | 
-                        Systems
-                    </p>
                     <div class="project-content">
-                        <div class="project-text">
+                        <div class="project-text-wrapper">
+                            <div class="project-text">
                        
-                            <p><em>Goal:</em><br>
-Break down complex systems and concepts into digestible narratives and intuitives diagrams, in the form of a slide deck. These tow examples are about Large Language Models, and heat pump systems.                       </p>
-                                <p>
-                                    <em>Motivation:</em><br>
-                                    Present these decks to clients in order to align goals for projects, or internally to team members to expand our understanding of the given concepts.                                </p>
-                                <br><br>
+                            <p class="bigger">
+                                Breaking down complex systems into digestible narratives and intuitive diagrams. Examples include Large Language Models and heat pump systems.
+                            </p>
+                            
                                 <div>
-                                    <button class="button-24" role="button">check it out!</button>
+                                    <button class="button-24" role="button">check it out! <i class="bi bi-arrow-right"></i></button>
                                 </div>
+                        </div>
+                            <div class="project-tags">
+                                <p class="small">
+                                    Graphic design<br>
+                                    Research<br>
+                                    Presentation<br>
+                                    Systems
+                                </p>
+                            </div>
                         </div>
                         <div class="project-image">
                    
@@ -261,82 +302,6 @@ Break down complex systems and concepts into digestible narratives and intuitive
                 </a>
             </div>
         
-  
-    
-       
-        <section class="art">
-            <h1 style="text-align: center;">Personal artwork</h1>
-           <h2>An abstract portrait</h2>
-           <p>'A blue guy', acrylic on canvas baord</p>
-           <br>
-            <img src="images/blue_face.png" alt="the quilt view">
-        
-        <br>
-        <br>
-        <br>
-            <h2>A collection of cubism inspired portraits</h2>
-            <p>'geometric folk' pencil on paper'</p>
-            <br>
-                <img src="images/faces_grid.png" alt="the quilt view">
-                <br>
-        <br>
-        <br>
-            
-           
-                <h2>My silk screen designs and burnt screens</h2>
-                <p>
-                    logo parody, David, and a flower skull. <br>
-                    The screens were created using photoemulsion.
-                    <br>
-                </p>
-
-            <div class="ui-pictures">
-                <img src="images/surprise_logo.png" alt="the quilt view">
-                <img src="images/david_face.jpeg" alt="the quilt view">
-                <img src="images/flower_skull.jpeg" alt="the quilt view">
-                
-            </div>
-       
-            <div class="ui-pictures">
-                <img src="images/surprise_screen.png" alt="the quilt view">
-                <img src="images/david_screen.png" alt="the quilt view">
-                <img src="images/skull_flower_screen.png" alt="the quilt view">
-                
-                
-            </div>
-            <br>
-            <br>
-            <br>
-            <h2>Some of my animations:</h2>
-            <a href="https://www.youtube.com/channel/UCulJ5PDfv__2YtdHR-EWPYw" class = "bi">check out my youtube!</a>
-            <br>
-            <br>
-            <div class="ui-pictures">
-                <video controls>
-                
-                    <source src="videos/Big fish.mp4" type="video/mp4">
-                  
-                    Your browser does not support HTML video.
-                  </video>
-
-                  <video controls>
-                
-                    <source src="videos/smile.MP4" type="video/mp4">
-                  
-                    Your browser does not support HTML video.
-                  </video>
-
-                  <video controls>
-                
-                    <source src="videos/Tongue man.MP4" type="video/mp4">
-                  
-                    Your browser does not support HTML video.
-                  </video>
-                
-                
-            </div>
-            
-        </section>
     </main>
     <h1 style="font-family: futura; text-align: center; color: #ee3062;">THAT'S ALL FOLKS!</h1>
     <br>
