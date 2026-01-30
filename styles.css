@@ -226,6 +226,15 @@ img {
         display: block;
     }
 
+    /* Stack two-column rows on mobile (text+text, text+image) */
+    .row {
+        flex-direction: column;
+    }
+    .row:not(:has(p)):not(:has(ul)):not(:has(h1)):not(:has(h2)):not(:has(.project-text)):not(:has(em)) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
 #about .row {
     align-items: flex-start !important;
 }
@@ -523,12 +532,17 @@ p.small {
     justify-content: left;
     max-height: 32rem;
     padding-right: 2rem;
+   
 }
 
 .project-image img{
-    
   max-height: 100%;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.project:hover .project-image img {
+  transform: scale(1.05);
 }
 .ui-pictures{
     display: flex;
@@ -599,6 +613,21 @@ header h1{
     letter-spacing: 0.05em;
 }
 @media (max-width: 768px) {
+    /* Stack all two-column rows to single column on mobile */
+    .row {
+        flex-direction: column;
+    }
+
+    /* Exception: keep images next to images in a row */
+    .row:not(:has(p)):not(:has(ul)):not(:has(h1)):not(:has(h2)):not(:has(.project-text)):not(:has(em)) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .row .column {
+        min-width: 0;
+    }
+
     .project-content {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
