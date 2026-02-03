@@ -16,13 +16,23 @@ html {
 /* Body Styles */
 body {
     width: 100%;
-    background-color: #FAF9F6;
+    background-color: #fff;
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
     line-height: 1.3;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.6s ease;
+}
+
+/* Index page only: pink hero, then cream when scrolled to work */
+body.index {
+    background-color: #ee3062;
+}
+
+body.index.scrolled-to-work {
+    background-color: #FAF9F6;
 }
 
 .header-container {
@@ -112,11 +122,24 @@ nav ul li a {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 400;
-    transition: color 0.3s ease;
+    display: inline-block;
+    transform: scale(1);
+    transform-origin: center;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 nav ul li a:hover {
     color: #ee3062;
+    transform: scale(1.2);
+}
+
+body.index nav ul li a {
+    color: #fff;
+}
+
+body.index nav ul li a:hover {
+    color: rgba(255, 255, 255, 0.85);
+    transform: scale(1.2);
 }
 
 /* Main Content Styles */
@@ -133,6 +156,67 @@ section {
     margin-left: auto;
     margin-right: auto;
     
+}
+
+#about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    background: transparent;
+    color: #fff;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+#about .row {
+    width: 80%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+
+#about p,
+#about .hero-intro,
+#about .project-text,
+#about .project-text p,
+#about .bigger,
+#about .contactInfo a,
+#about .button-24 {
+    color: #fff;
+    transition: color 0.6s ease;
+}
+
+body.scrolled-to-work #about p,
+body.scrolled-to-work #about .hero-intro,
+body.scrolled-to-work #about .project-text,
+body.scrolled-to-work #about .project-text p,
+body.scrolled-to-work #about .bigger,
+body.scrolled-to-work #about .contactInfo a,
+body.scrolled-to-work #about .button-24 {
+    color: #333;
+}
+
+#about .button-24 {
+    border-color: #fff;
+    background-color: transparent;
+    transition: border-color 0.6s ease, background-color 0.6s ease;
+}
+
+#about .button-24:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+body.scrolled-to-work #about .button-24 {
+    border-color: #555;
+    background-color: #FAF9F6;
+}
+
+body.scrolled-to-work #about .button-24:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 h1{
     font-size:2.5rem;
@@ -611,6 +695,14 @@ header h1{
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.05em;
+}
+
+body.index header h1 {
+    color: #fff;
+}
+
+body.index.scrolled-to-work header h1 {
+    color: #333;
 }
 @media (max-width: 768px) {
     /* Stack all two-column rows to single column on mobile */

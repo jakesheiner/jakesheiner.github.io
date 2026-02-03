@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles.css">
    
 </head>
-<body>
+<body class="index">
     <header>
         <div class="header-container">
             <h1>jake sheiner</h1>
@@ -309,5 +309,21 @@
     <br> <br>
     <br>
     <br>
+    <script>
+        (function() {
+            var about = document.getElementById('about');
+            if (!about) return;
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        document.body.classList.remove('scrolled-to-work');
+                    } else {
+                        document.body.classList.add('scrolled-to-work');
+                    }
+                });
+            }, { threshold: 0.8 });
+            observer.observe(about);
+        })();
+    </script>
 </body>
 </html>
