@@ -5,6 +5,7 @@ const canvas = document.getElementById('gridCanvas');
   const cols = canvas.width / squareSize;
   const grid = Array.from({ length: rows }, () => Array(cols).fill(false));
   let isDragging = false;
+  let hoveredCell = { row: -1, col: -1 };
 
   // Add clear button functionality
 document.getElementById('clearCanvas').addEventListener('click', () => {
@@ -52,14 +53,19 @@ document.getElementById('clearCanvas').addEventListener('click', () => {
   function drawGrid() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Draw background cells first
+    // Draw background dot grid (light gray dots at cell centers)
+    const dotRadius = 2;
+    const hoverDotRadius = 5;
+    ctx.fillStyle = "#b0b0b0";
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < cols; col++) {
-        ctx.fillStyle = "	#1ebbd7"; // Sky blue background for the grid
-        ctx.fillRect(col * squareSize, row * squareSize, squareSize-1, squareSize-1);
-        ctx.strokeStyle = '#fff';
-        ctx.lineWidth = 0.3;
-        ctx.strokeRect(col * squareSize, row * squareSize, squareSize-1, squareSize-1);
+        const cx = col * squareSize + squareSize / 2;
+        const cy = row * squareSize + squareSize / 2;
+        const isHovered = row === hoveredCell.row && col === hoveredCell.col;
+        const r = isHovered ? hoverDotRadius : dotRadius;
+        ctx.beginPath();
+        ctx.arc(cx, cy, r, 0, Math.PI * 2);
+        ctx.fill();
       }
     }
 
@@ -176,9 +182,13 @@ canvas.addEventListener('mousedown', (e) => {
 });
 
 canvas.addEventListener('mousemove', (e) => {
+  const col = Math.floor(e.offsetX / squareSize);
+  const row = Math.floor(e.offsetY / squareSize);
+  if (row !== hoveredCell.row || col !== hoveredCell.col) {
+    hoveredCell = { row, col };
+    drawGrid();
+  }
   if (isDragging) {
-      const col = Math.floor(e.offsetX / squareSize);
-      const row = Math.floor(e.offsetY / squareSize);
       if (e.shiftKey) {
           clearSquare(row, col);
       } else {
@@ -189,6 +199,8 @@ canvas.addEventListener('mousemove', (e) => {
 
   canvas.addEventListener('mouseleave', () => {
     isDragging = false;
+    hoveredCell = { row: -1, col: -1 };
+    drawGrid();
   });
 
   drawGrid();
