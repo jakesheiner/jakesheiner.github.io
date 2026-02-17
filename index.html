@@ -98,6 +98,39 @@
                 </div>
                 </a>
 
+                <a href="gallup.html" class="project">
+                    <div class="project-header">
+                        <h2>Data Visualization for Gallup</h2>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-text-wrapper">
+                            <div class="project-text">
+                                <p class="bigger">
+                                    Interactive dashboards and data visualizations built for Gallup to surface insights from Clifton Strengths assessments.
+                                </p>
+                                <div>
+                                    <button class="button-24" role="button">check it out! <i class="bi bi-arrow-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="project-tags">
+                                <p class="small">
+                                    Data visualization<br>
+                                    Storytelling<br>
+                                    React<br>
+                                    Web design
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <video id="gallup-video" class="project-card-video" muted loop playsinline
+                                src="videos/gallup.mov"
+                                type="video/quicktime"
+                                poster="">
+                            </video>
+                        </div>
+                    </div>
+                </a>
+
                 <a href="myQuilt.html" class="project">
                     
                     <div class="project-header">
@@ -323,6 +356,21 @@
                 });
             }, { threshold: 0.8 });
             observer.observe(about);
+        })();
+
+        (function() {
+            var video = document.getElementById('gallup-video');
+            if (!video) return;
+            var io = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        video.play();
+                    } else {
+                        video.pause();
+                    }
+                });
+            }, { threshold: 0.25 });
+            io.observe(video);
         })();
     </script>
 </body>

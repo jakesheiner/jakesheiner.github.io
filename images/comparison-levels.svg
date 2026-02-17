@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.67 382.94">
+  <text transform="translate(150.92 154.72)" style="fill: #939598; font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <text transform="translate(168.57 148.51)" style="fill: #939598; font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <text transform="translate(25.56 20.14)" style="font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <text transform="translate(160.85 20.14)" style="font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <text transform="translate(25.56 150.64)" style="font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <text transform="translate(193.72 292.07)" style="font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <text transform="translate(0 292.07)" style="font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <text transform="translate(161.12 162.33)" style="font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <text transform="translate(87.55 347.35)" style="fill: #939598; font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <text transform="translate(105.2 341.14)" style="fill: #939598; font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <text transform="translate(97.76 354.96)" style="font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <g>
+    <line x1="78.81" y1="16.13" x2="131.6" y2="16.13" style="fill: none; stroke: #00aeef; stroke-miterlimit: 10;"/>
+    <polygon points="82.12 20.22 82.8 19.49 79.19 16.13 82.8 12.77 82.12 12.04 77.72 16.13 82.12 20.22" style="fill: #00aeef;"/>
+    <polygon points="128.28 20.22 127.6 19.49 131.21 16.13 127.6 12.77 128.28 12.04 132.68 16.13 128.28 20.22" style="fill: #00aeef;"/>
+  </g>
+  <g>
+    <line x1="78.81" y1="150.64" x2="131.6" y2="150.64" style="fill: none; stroke: #00aeef; stroke-miterlimit: 10;"/>
+    <polygon points="82.12 154.73 82.8 154 79.19 150.64 82.8 147.29 82.12 146.55 77.72 150.64 82.12 154.73" style="fill: #00aeef;"/>
+    <polygon points="128.28 154.73 127.6 154 131.21 150.64 127.6 147.29 128.28 146.55 132.68 150.64 128.28 154.73" style="fill: #00aeef;"/>
+  </g>
+  <g style="opacity: .5;">
+    <line x1="36.53" y1="297.52" x2="81.27" y2="329.43"/>
+    <g>
+      <line x1="37.41" y1="298.15" x2="80.39" y2="328.8" style="fill: none; stroke: #00aeef; stroke-miterlimit: 10;"/>
+      <polygon points="37.74 303.4 38.72 303.2 37.73 298.37 42.62 297.73 42.49 296.74 36.53 297.52 37.74 303.4" style="fill: #00aeef;"/>
+      <polygon points="75.32 330.2 75.19 329.21 80.08 328.58 79.09 323.75 80.07 323.55 81.27 329.43 75.32 330.2" style="fill: #00aeef;"/>
+    </g>
+  </g>
+  <g style="opacity: .5;">
+    <line x1="183.5" y1="297.52" x2="138.75" y2="329.43"/>
+    <g>
+      <line x1="182.61" y1="298.15" x2="139.64" y2="328.8" style="fill: none; stroke: #00aeef; stroke-miterlimit: 10;"/>
+      <polygon points="177.54 296.74 177.41 297.73 182.3 298.37 181.31 303.2 182.29 303.4 183.49 297.52 177.54 296.74" style="fill: #00aeef;"/>
+      <polygon points="139.96 323.54 140.94 323.74 139.95 328.57 144.84 329.21 144.71 330.2 138.75 329.43 139.96 323.54" style="fill: #00aeef;"/>
+    </g>
+  </g>
+  <g>
+    <path d="M76.1,301.52c4.04-3.46,16.46-12.9,34.68-12.7,17.57.19,29.49,9.22,33.54,12.69" style="fill: none; stroke: #00aeef; stroke-miterlimit: 10;"/>
+    <polygon points="81.28 302.61 81.34 301.61 76.42 301.3 77.09 296.42 76.09 296.28 75.29 302.23 81.28 302.61" style="fill: #00aeef;"/>
+    <polygon points="139.13 302.6 139.07 301.6 143.99 301.3 143.33 296.41 144.33 296.28 145.13 302.23 139.13 302.6" style="fill: #00aeef;"/>
+  </g>
+  <text transform="translate(41.93 53.95)" style="font-family: SFCompact-Regular, &apos;SF Compact&apos;; font-size: 12px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 457;"><tspan x="0" y="0">ind</tspan><tspan x="17.66" y="0" style="letter-spacing: 0em;">i</tspan><tspan x="21.16" y="0">vidual to ind</tspan><tspan x="89.06" y="0" style="letter-spacing: 0em;">i</tspan><tspan x="92.57" y="0">vidual</tspan></text>
+  <text transform="translate(58.9 188.2)" style="font-family: SFCompact-Regular, &apos;SF Compact&apos;; font-size: 12px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 457;"><tspan x="0" y="0">ind</tspan><tspan x="17.66" y="0" style="letter-spacing: 0em;">i</tspan><tspan x="21.16" y="0">vidual to team</tspan></text>
+  <text transform="translate(0 375.49)" style="font-family: SFCompact-Regular, &apos;SF Compact&apos;; font-size: 12px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 457;"><tspan x="0" y="0">ind</tspan><tspan x="17.66" y="0" style="letter-spacing: 0em;">i</tspan><tspan x="21.16" y="0">vidual-t</tspan><tspan x="64.09" y="0" style="letter-spacing: 0em;">o</tspan><tspan x="70.9" y="0">-team to ind</tspan><tspan x="138.37" y="0" style="letter-spacing: 0em;">i</tspan><tspan x="141.87" y="0">vidual-t</tspan><tspan x="184.8" y="0" style="letter-spacing: 0em;">o</tspan><tspan x="191.61" y="0">-team</tspan></text>
+</svg>
