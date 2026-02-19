@@ -229,6 +229,7 @@ hr{
 main h1{
     color:#333;
     padding:1rem;
+    text-align: center;
 }
 main{
     margin-left: auto;
@@ -347,6 +348,72 @@ img {
     margin-bottom: 0;
 }
 
+/* Case study blocks: Problem / Solution / Impact */
+.case-block {
+    margin-bottom: 4rem;
+    padding: 2.5rem 0;
+    border-top: 1px solid #e8e8e8;
+}
+
+.case-block:first-of-type {
+    border-top: none;
+    padding-top: 0;
+}
+
+.case-block-label {
+    display: block;
+    font-family: 'Teko', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #888;
+}
+
+.case-block-problem .case-block-label { color: #c44; }
+.case-block-solution .case-block-label { color: #2a7; }
+.case-block-impact .case-block-label { color: #ee3062; }
+
+.case-block h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.case-block p {
+    max-width: 52ch;
+    margin-bottom: 1.5rem;
+}
+
+.case-block-impact .details-video-fullwidth {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+/* Gallup case study: narrower width, left-align all text */
+.details.gallup-case-study {
+    width: 50%;
+}
+
+.details.gallup-case-study .case-block-label,
+.details.gallup-case-study .case-block h2,
+.details.gallup-case-study .case-block h3,
+.details.gallup-case-study .case-block p,
+.details.gallup-case-study .details-section h2,
+.details.gallup-case-study .details-section h3,
+.details.gallup-case-study .details-section p,
+.details.gallup-case-study .graph-item-copy,
+.details.gallup-case-study .graph-item-copy h3,
+.details.gallup-case-study .graph-item-copy p {
+    text-align: left;
+}
+
+.details.gallup-case-study .case-block p,
+.details.gallup-case-study .details-section > p {
+    max-width: none;
+}
+
+
 .details-section img {
     margin-top: 2rem;
     margin-bottom: 0;
@@ -371,26 +438,44 @@ img {
 
 .details-graphs {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-top: 2rem;
 }
 
 .details-graphs .graph-item {
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .details-graphs .graph-item img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    object-position: center;
+    background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     margin-top: 0;
 }
 
-.details-graphs .graph-item figcaption {
-    margin-top: 0.75rem;
+.details-graphs .graph-item figcaption.graph-item-copy {
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.details-graphs .graph-item-copy h3 {
     font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    color: #333;
+}
+
+.details-graphs .graph-item-copy p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
     color: #555;
 }
 
@@ -554,24 +639,24 @@ img {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     box-sizing: border-box;
 }
 
 .project {
-    
     display: flex;
-  text-align: center;
+    text-align: center;
     flex-wrap: wrap;
     text-decoration: none;
     color: inherit;
     max-width: 1200px;
+    width: 100%;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     align-items: center;
     padding: 1rem;
-    
 }
 
 .project-header {
@@ -892,6 +977,19 @@ body.index.scrolled-to-work header h1 {
 
     .details h2 {
         margin-top: 3rem;
+    }
+
+    .case-block {
+        padding: 1.5rem 0;
+    }
+
+    .case-block-label {
+        font-size: 0.85rem;
+        letter-spacing: 0.15em;
+    }
+
+    .details-graphs {
+        grid-template-columns: 1fr;
     }
 
 }

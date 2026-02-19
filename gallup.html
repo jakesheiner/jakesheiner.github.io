@@ -26,11 +26,11 @@
         </div>
     </header>
 
-    <main class="details">
+    <main class="details gallup-case-study">
         <div class="row">
             <div class="column">
                 <p><em>Data visualization for Gallup</em><br>
-                    Clifton Strengths assessment. Create hands-on prototypes for the Gallup executive team to test various methods of data visualization—to make test results intuitive and impactful for team building.
+                    Ideated and created working prototypes for data visualization of Clifton Strengths assessment results. Turning raw data into insights that are easy to understand,and intuitive to act on. The prototypes were functional allowing the team at gallup to test them with their own data, creating a deeper dialogie between udesigner and stakeholder.
                 </p>
             </div>
             <div class="column">
@@ -41,49 +41,75 @@
             </div>
         </div>
 
-        <section class="details-section">
-            <h2>Started with a scrollytelling demo, NYT style.</h2>
-            <p>Create narratives from test data, to convey insights in a meaningful and digestible way.</p>
-            <video class="details-video" muted loop playsinline autoplay
-                src="videos/scrolly-telling.mov"
-                type="video/quicktime">
-            </video>
+        <!-- Problem -->
+        <section class="case-block case-block-problem">
+            <span class="case-block-label">Problem</span>
+            <h2>Strengths assessment results need to make sense for any team that uses the test.</h2>
+            <p>Raw scores and dense reports don’t help teams act. The goal was clear, intuitive visualizations so any group could see compatibility, trends, and gaps—and use them for team building and assessment.</p>
+            <h3>Visualizations were designed to analyze compatibility at various levels.</h3>
+            <img class="details-img-half" src="images/comparison-levels.png" alt="Comparison levels for compatibility analysis">
         </section>
 
-        <section class="details-section">
-            <h2>Next step was to make it real.</h2>
-            <p>Allow the Gallup team to upload their own CSV files, and test out different visualizations themselves. Created several demos for different visualization styles:</p>
-            <img src="images/file-upload.png" alt="File upload interface for CSV uploads">
-            <h3>The visualizations were designed to analyze compatibility at various levels.</h3>
-            <img class="details-img-half" src="images/comparison-levels.png" alt="Comparison levels for compatibility analysis">
-            <div class="details-graphs">
-                <figure class="graph-item">
-                    <img src="images/gallup-graph-bar.png" alt="Bar graph visualization">
-                    <figcaption>Bar graph</figcaption>
-                </figure>
-                <figure class="graph-item">
-                    <img src="images/gallup-graph-heatmap.png" alt="Heatmap visualization">
-                    <figcaption>Heatmap</figcaption>
-                </figure>
-                <figure class="graph-item">
-                    <img src="images/gallup-graph-scatterplot.png" alt="Scatterplot visualization">
-                    <figcaption>Scatterplot</figcaption>
-                </figure>
-                <figure class="graph-item">
-                    <img src="images/gallup-graph-scatterplot-comparison.png" alt="Scatterplot comparison visualization">
-                    <figcaption>Scatterplot comparison</figcaption>
-                </figure>
+        <!-- Solution -->
+        <section class="case-block case-block-solution">
+            <span class="case-block-label">Solution</span>
+            <div class="details-section">
+                <h2>Scrollytelling first—NYT style.</h2>
+                <p>Create narratives from test data so insights are meaningful and digestible.</p>
+                <video class="details-video" muted loop playsinline autoplay
+                    src="videos/scrolly-telling.mov"
+                    type="video/quicktime">
+                </video>
+            </div>
+            <div class="details-section">
+                <h2>Functional prototypes with real data.</h2>
+                <p>Making the prototypes functional and allowing users to upload their own CSV data is what made them hands-on for the executive team—they could try different visualization styles with real Strengths data. Several demos:</p>
+                <img src="images/file-upload.png" alt="File upload interface for CSV uploads">
+                <div class="details-graphs">
+                    <figure class="graph-item">
+                        <img src="images/gallup-graph-bar.png" alt="Bar graph visualization">
+                        <figcaption class="graph-item-copy">
+                            <h3>Pairwise comparisons with a bar chart</h3>
+                            <p>Side-by-side bars make it easy to compare two people’s Strengths profiles and spot alignment or gaps at a glance.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="graph-item">
+                        <img src="images/gallup-graph-heatmap.png" alt="Heatmap visualization">
+                        <figcaption class="graph-item-copy">
+                            <h3>Seeing team trends on a heatmap</h3>
+                            <p>Color-coded cells show how strengths are distributed across the team so patterns and clusters stand out.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="graph-item">
+                        <img src="images/gallup-graph-scatterplot.png" alt="Scatterplot visualization">
+                        <figcaption class="graph-item-copy">
+                            <h3>Comparing individual to team compatibility with a scatterplot</h3>
+                            <p>Plot one person against the team to see where they fit and how their strengths relate to the group.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="graph-item">
+                        <img src="images/gallup-graph-scatterplot-comparison.png" alt="Scatterplot comparison visualization">
+                        <figcaption class="graph-item-copy">
+                            <h3>Comparing compatibilities across scatterplots</h3>
+                            <p>Multiple scatterplots let you compare compatibility across different pairs or dimensions in one view.</p>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
 
-       
-
-        <div class="details-video-fullwidth">
-            <video class="details-video" muted loop playsinline autoplay
-                src="videos/gallup.mov"
-                type="video/quicktime">
-            </video>
-        </div>
+        <!-- Impact -->
+        <section class="case-block case-block-impact">
+            <span class="case-block-label">Impact</span>
+            <h2>The executive team could test and compare visualization methods with real data.</h2>
+            <p>Because the prototypes were functional and accepted real uploads, they became truly hands-on—giving Gallup a clear path to choose which visualizations work best for any team using the assessment.</p>
+            <div class="details-video-fullwidth">
+                <video class="details-video" muted loop playsinline autoplay
+                    src="videos/gallup.mov"
+                    type="video/quicktime">
+                </video>
+            </div>
+        </section>
     </main>
 </body>
 </html>
