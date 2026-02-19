@@ -395,6 +395,13 @@ img {
     width: 50%;
 }
 
+.details.gallup-case-study .case-block-label {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    letter-spacing: normal;
+    color: #666;
+    text-transform: lowercase;
+}
+
 .details.gallup-case-study .case-block-label,
 .details.gallup-case-study .case-block h2,
 .details.gallup-case-study .case-block h3,
