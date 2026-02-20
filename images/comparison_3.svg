@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.04 128.95">
+  <text transform="translate(194.41 41.56)" style="font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <text transform="translate(.69 41.56)" style="font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <text transform="translate(88.24 96.85)" style="fill: #939598; font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <text transform="translate(105.89 90.64)" style="fill: #939598; font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <text transform="translate(98.44 104.45)" style="font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <g style="opacity: .5;">
+    <line x1="37.22" y1="47.01" x2="81.96" y2="78.92"/>
+    <g>
+      <line x1="38.1" y1="47.64" x2="81.08" y2="78.29" style="fill: none; stroke: #00aeef; stroke-miterlimit: 10;"/>
+      <polygon points="38.42 52.89 39.4 52.69 38.41 47.86 43.3 47.23 43.17 46.23 37.22 47.01 38.42 52.89" style="fill: #00aeef;"/>
+      <polygon points="76 79.7 75.87 78.7 80.76 78.07 79.77 73.24 80.75 73.04 81.96 78.92 76 79.7" style="fill: #00aeef;"/>
+    </g>
+  </g>
+  <g style="opacity: .5;">
+    <line x1="184.18" y1="47.01" x2="139.44" y2="78.92"/>
+    <g>
+      <line x1="183.3" y1="47.64" x2="140.32" y2="78.29" style="fill: none; stroke: #00aeef; stroke-miterlimit: 10;"/>
+      <polygon points="178.23 46.23 178.09 47.23 182.98 47.86 181.99 52.69 182.97 52.89 184.18 47.01 178.23 46.23" style="fill: #00aeef;"/>
+      <polygon points="140.64 73.04 141.62 73.24 140.63 78.07 145.52 78.7 145.39 79.7 139.44 78.92 140.64 73.04" style="fill: #00aeef;"/>
+    </g>
+  </g>
+  <g>
+    <path d="M76.78,51.01c4.04-3.46,16.46-12.9,34.68-12.7,17.57.19,29.49,9.22,33.54,12.69" style="fill: none; stroke: #00aeef; stroke-miterlimit: 10;"/>
+    <polygon points="81.96 52.1 82.03 51.1 77.11 50.8 77.77 45.91 76.78 45.78 75.97 51.73 81.96 52.1" style="fill: #00aeef;"/>
+    <polygon points="139.82 52.09 139.76 51.09 144.68 50.79 144.02 45.91 145.01 45.77 145.81 51.73 139.82 52.09" style="fill: #00aeef;"/>
+  </g>
+</svg>

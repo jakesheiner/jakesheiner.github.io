@@ -390,9 +390,17 @@ img {
     margin-bottom: 0;
 }
 
-/* Gallup case study: narrower width, left-align all text */
+/* Gallup case study: narrower width, larger type, left-align all text */
 .details.gallup-case-study {
-    width: 50%;
+  padding: 1rem;
+    font-size: 1.125rem;
+}
+
+.details.gallup-case-study .gallup-case-study-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem 0;
+    line-height: 1.2;
 }
 
 .details.gallup-case-study .case-block-label {
@@ -400,6 +408,20 @@ img {
     letter-spacing: normal;
     color: #666;
     text-transform: lowercase;
+}
+
+.details.gallup-case-study .case-block-label {
+    font-size: 1.05rem;
+}
+
+.details.gallup-case-study .case-block h2,
+.details.gallup-case-study .details-section h2 {
+    font-size: 1.65rem;
+}
+
+.details.gallup-case-study .case-block h3,
+.details.gallup-case-study .details-section h3 {
+    font-size: 1.25rem;
 }
 
 .details.gallup-case-study .case-block-label,
@@ -415,9 +437,53 @@ img {
     text-align: left;
 }
 
+.details.gallup-case-study .graph-item-copy h3 {
+    font-size: 1.1rem;
+}
+
+.details.gallup-case-study .graph-item-copy p {
+    font-size: 1.05rem;
+}
+
 .details.gallup-case-study .case-block p,
 .details.gallup-case-study .details-section > p {
     max-width: none;
+}
+
+.details.gallup-case-study .case-block-problem .comparison-levels-row {
+    margin-top: 4rem;
+}
+
+.comparison-levels-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.comparison-level-item {
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+}
+
+.comparison-level-frame {
+    background: #e8e8e8;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.comparison-level-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0;
+}
+
+.comparison-level-item figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    color: #555;
 }
 
 
@@ -974,8 +1040,8 @@ body.index.scrolled-to-work header h1 {
 
     .details {
         width: 100%;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .details .row {
@@ -997,6 +1063,15 @@ body.index.scrolled-to-work header h1 {
 
     .details-graphs {
         grid-template-columns: 1fr;
+    }
+
+    .comparison-levels-row {
+        flex-direction: column;
+    }
+
+    .comparison-level-item {
+        flex: 1 1 100%;
+        min-width: 100%;
     }
 
 }

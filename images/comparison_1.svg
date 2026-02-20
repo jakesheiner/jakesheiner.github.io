@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.04 128.95">
+  <text transform="translate(32.92 73.01)" style="font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <text transform="translate(168.21 73.01)" style="font-family: SFCompact-Black, &apos;SF Compact&apos;; font-size: 24.17px; font-variation-settings: &apos;opsz&apos; 19, &apos;wght&apos; 1000; font-weight: 800;"><tspan x="0" y="0">􀉪</tspan></text>
+  <g>
+    <line x1="86.17" y1="68.99" x2="138.96" y2="68.99" style="fill: none; stroke: #00aeef; stroke-miterlimit: 10;"/>
+    <polygon points="89.48 73.08 90.17 72.35 86.55 69 90.17 65.64 89.48 64.91 85.09 69 89.48 73.08" style="fill: #00aeef;"/>
+    <polygon points="135.64 73.08 134.96 72.35 138.57 69 134.96 65.64 135.64 64.91 140.04 69 135.64 73.08" style="fill: #00aeef;"/>
+  </g>
+</svg>
