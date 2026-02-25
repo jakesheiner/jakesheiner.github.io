@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* ========== 1. Reset and base ========== */
 * {
     margin: 0;
     padding: 0;
@@ -35,6 +35,7 @@ body.index.scrolled-to-work {
     background-color: #FAF9F6;
 }
 
+/* ========== 2. Layout ========== */
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -46,6 +47,7 @@ body.index.scrolled-to-work {
 }
 
 
+/* ========== 7. Page-specific utilities ========== */
 .case_study_content{
     padding-top: 10pt;
     display: flex;
@@ -60,8 +62,8 @@ body.index.scrolled-to-work {
     padding: 1rem;
 }
 
-.image_caption p{
-    padding: auto;
+.image_caption p {
+    padding: 0;
 }
 
 .drumwave{
@@ -84,7 +86,7 @@ body.index.scrolled-to-work {
     max-width:33%;
     object-fit:contain;
 }
-/* Header Styles */
+/* Header */
 header {
     width: 80%;
     max-width: 100%;
@@ -98,9 +100,6 @@ header {
     box-sizing: border-box;
 }
 
-l{
-    font-size:0.5rem;
-}
 
 
 nav ul {
@@ -231,6 +230,15 @@ main h1{
     padding:1rem;
     text-align: center;
 }
+
+#work {
+    font-size: 1.25rem;
+    text-align: left;
+    padding-left: calc((100% - min(100%, 1200px)) / 2 + 1rem);
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 main{
     margin-left: auto;
     margin-right: auto;
@@ -273,6 +281,7 @@ img {
     max-width: none;
 }
 
+/* ========== 3. Details / case study ========== */
 .details img {
     margin-bottom: 3rem;
     max-width: 100%;
@@ -390,10 +399,12 @@ img {
     margin-bottom: 0;
 }
 
-/* Gallup case study: narrower width, larger type, left-align all text */
+/* ========== 4. Gallup case study overrides ========== */
 .details.gallup-case-study {
-  padding: 1rem;
+    width: 50%;
+    padding: 1rem;
     font-size: 1.125rem;
+    text-align: left;
 }
 
 .details.gallup-case-study .gallup-case-study-title {
@@ -405,13 +416,10 @@ img {
 
 .details.gallup-case-study .case-block-label {
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    font-size: 1.05rem;
     letter-spacing: normal;
     color: #666;
     text-transform: lowercase;
-}
-
-.details.gallup-case-study .case-block-label {
-    font-size: 1.05rem;
 }
 
 .details.gallup-case-study .case-block h2,
@@ -422,19 +430,6 @@ img {
 .details.gallup-case-study .case-block h3,
 .details.gallup-case-study .details-section h3 {
     font-size: 1.25rem;
-}
-
-.details.gallup-case-study .case-block-label,
-.details.gallup-case-study .case-block h2,
-.details.gallup-case-study .case-block h3,
-.details.gallup-case-study .case-block p,
-.details.gallup-case-study .details-section h2,
-.details.gallup-case-study .details-section h3,
-.details.gallup-case-study .details-section p,
-.details.gallup-case-study .graph-item-copy,
-.details.gallup-case-study .graph-item-copy h3,
-.details.gallup-case-study .graph-item-copy p {
-    text-align: left;
 }
 
 .details.gallup-case-study .graph-item-copy h3 {
@@ -492,9 +487,9 @@ img {
     margin-bottom: 0;
 }
 
-.details img.details-img-half {
-    width: 37.5% !important;
-    max-width: min(300px, 63vw) !important;
+.details .details-img-half {
+    width: 37.5%;
+    max-width: min(300px, 63vw);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -552,60 +547,9 @@ img {
     color: #555;
 }
 
-@media only screen and (max-width: 800px) {
-    main{
-        width: 100%;
-    }
 
-    header{
-        width: 80%;
-    }
-    
-    #hero {
-        align-items: center;
-    }
-    
-    #hero img {
-        width: 50% !important;
-        padding: 0;
-        margin: 0 auto;
-        display: block;
-    }
-
-    /* Stack two-column rows on mobile (text+text, text+image) */
-    .row {
-        flex-direction: column;
-    }
-    .row:not(:has(p)):not(:has(ul)):not(:has(h1)):not(:has(h2)):not(:has(.project-text)):not(:has(em)) {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-#about .row {
-    align-items: flex-start !important;
-}
-
-#about .column:last-child {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-#about .column:last-child img {
-    max-height: 150px !important;
-    height: 150px !important;
-    width: auto !important;
-    object-fit: contain !important;
-    display: block !important;
-}
-
-    .project-text {
-        padding-right: 0rem !important;
-    }
-}
-
+/* ========== 5. Homepage / index ========== */
 #hero {
-   
     display: flex;
     flex-direction: column-reverse;
     color: #333;
@@ -704,7 +648,7 @@ img {
   
 
 
-  .portfolio {
+.portfolio {
     border-bottom: 0.5px solid #bbb;
     text-align: center;
     width: 100%;
@@ -798,22 +742,15 @@ img {
     white-space: nowrap;
 }
 
-.project-tags .small {
-    white-space: normal;
-}
-
-.project-tags .small {
-    display: block;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-size: 0.85rem;
-    white-space: nowrap;
-}
-
 .project-image {
     grid-column: 2;
     grid-row: 1;
     min-width: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    max-height: 32rem;
+    padding-right: 2rem;
 }
 
 .project-text > div:has(.button-24) {
@@ -825,15 +762,10 @@ img {
     font-size: 2.5rem;
     color: #333;
 }
-p{
-    font-size:1rem;
-}
-/* #hero .project-text p,
-.project-text p {
-    margin-bottom:1rem;
+
+p {
     font-size: 1rem;
-    color: #555;
-} */
+}
 
 .project-text p {
     margin-bottom: 2rem;
@@ -853,32 +785,22 @@ p{
     line-height: 1.2;
 }
 
-/* #hero .project-text p {
-    font-size: 1rem;
-    line-height: 1.6;
-} */
-
 .small,
 p.small {
     display: inline-block;
     font-weight: light;
     line-height: 1.2 !important;
     font-size: 1rem;
-    color:#949494;
+    color: #949494;
 }
 
 .project-tags .small {
     display: block;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 0.85rem;
     line-height: 1.6;
-}
-
-.project-image {
-    display: flex;
-    align-items: flex-start;
-    justify-content: left;
-    max-height: 32rem;
-    padding-right: 2rem;
-   
+    white-space: normal;
 }
 
 .project-image img{
@@ -978,13 +900,33 @@ body.index header h1 {
 body.index.scrolled-to-work header h1 {
     color: #333;
 }
+/* ========== 8. Responsive ========== */
 @media (max-width: 768px) {
-    /* Stack all two-column rows to single column on mobile */
+    /* Layout */
+    main {
+        width: 100%;
+    }
+
+    header {
+        width: 80%;
+    }
+
+    #hero {
+        align-items: center;
+    }
+
+    #hero img {
+        width: 50% !important;
+        padding: 0;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Stack two-column rows to single column */
     .row {
         flex-direction: column;
     }
 
-    /* Exception: keep images next to images in a row */
     .row:not(:has(p)):not(:has(ul)):not(:has(h1)):not(:has(h2)):not(:has(.project-text)):not(:has(em)) {
         flex-direction: row;
         flex-wrap: wrap;
@@ -992,6 +934,24 @@ body.index.scrolled-to-work header h1 {
 
     .row .column {
         min-width: 0;
+    }
+
+    #about .row {
+        align-items: flex-start !important;
+    }
+
+    #about .column:last-child {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #about .column:last-child img {
+        max-height: 150px !important;
+        height: 150px !important;
+        width: auto !important;
+        object-fit: contain !important;
+        display: block !important;
     }
 
     .project-content {
@@ -1019,7 +979,7 @@ body.index.scrolled-to-work header h1 {
     }
 
     .project-text {
-        padding-right: 0;
+        padding-right: 0 !important;
         margin-bottom: 1rem;
     }
 
@@ -1079,7 +1039,7 @@ body.index.scrolled-to-work header h1 {
 
 
 
-/* CSS */
+/* ========== 6. Shared components ========== */
 .button-24 {
   border: 0.5px solid #555;
   background-color: #FAF9F6;

@@ -1,0 +1,160 @@
+---
+description: Rules for implementing Figma designs using the Figma MCP server. Covers design tokens, CSS patterns, layout components, asset handling, and the required Figma-to-code workflow for this static HTML/CSS portfolio.
+globs: "**/*.html, styles.css"
+alwaysApply: false
+---
+
+# Figma Design System Rules — jakesheiner.github.io
+
+This document captures how to translate Figma designs into this codebase. The site is a **static HTML/CSS/JS portfolio** with no framework or build step.
+
+---
+
+## 1. Design System Structure (Codebase Analysis)
+
+### 1.1 Token Definitions
+
+- **Where:** There is no separate token file. Visual tokens are **hardcoded in `styles.css`**.
+- **Format:** Raw hex/rgb values in CSS. No CSS variables or theme object.
+- **Transformation:** None.
+
+**Canonical palette (use these values when matching Figma to code):**
+
+| Role | Value | Usage in codebase |
+|------|--------|-------------------|
+| Brand / accent | `#ee3062` | Header name, nav hover, case-block-impact label, “That’s all folks” |
+| Cream / off-white | `#FAF9F6` | Body (scrolled), button default background |
+| Primary text | `#333` | Body text, headings, project titles |
+| Muted text | `#949494` | .small, .hero-intro, .right column |
+| White | `#fff` | Hero text and buttons on index |
+| Dark UI | `#555` | Nav, button border/text, footer-style |
+| Borders / frames | `#e8e8e8`, `#ddd`, `#bbb` | Case blocks, project borders |
+| Problem label | `#c44` | .case-block-problem .case-block-label |
+| Solution label | `#2a7` | .case-block-solution .case-block-label |
+| Impact label | `#ee3062` | .case-block-impact .case-block-label |
+
+When implementing from Figma, **map design colors to these exact hex values** so new sections stay consistent with existing pages.
+
+### 1.2 Component Library
+
+- **Where:** No separate component library. “Components” are **reusable HTML patterns + CSS classes** in `styles.css`.
+- **Architecture:** Class-based; no JS components or partials. Each page is a full HTML file that shares `styles.css`.
+- **Documentation:** None (no Storybook or component docs).
+
+**Reusable patterns to prefer:**
+
+- **Layout:** `.header-container`, `.row`, `.column`, `.portfolio`, `.project`, `.project-content`, `.project-text-wrapper`, `.project-text`, `.project-tags`, `.project-image`
+- **Case studies:** `.details`, `.details-section`, `.case-block`, `.case-block-problem` / `.case-block-solution` / `.case-block-impact`, `.case-block-label`, `.comparison-levels-row`, `.comparison-level-item`, `.comparison-level-frame`, `.details-graphs`, `.graph-item`, `.graph-item-copy`
+- **Buttons:** `.button-24` (pill style, used site-wide)
+- **Typography:** `.bigger`, `.small`, `.hero-intro`
+- **Gallup-specific:** `.details.gallup-case-study`, `.gallup-case-study-title`
+
+When Figma shows a card, case block, or CTA, **reuse these class names and structure** instead of inventing new ones.
+
+### 1.3 Frameworks & Libraries
+
+- **UI:** None. Vanilla HTML, CSS, and JavaScript.
+- **Styling:** Single global stylesheet `styles.css`. No Tailwind, CSS Modules, or styled-components.
+- **Build:** No bundler. Static files only (e.g. GitHub Pages).
+
+**Implication for Figma MCP:** Treat MCP output (e.g. React + Tailwind) as **design and layout reference only**. Implement in **plain HTML + existing classes in `styles.css`** (or new classes that follow the same patterns).
+
+### 1.4 Asset Management
+
+- **Storage:**  
+  - Images: `images/` (e.g. `images/favicon.svg`, `images/muse_hero.JPG`).  
+  - Video: `videos/` (e.g. `videos/gallup.mov`).
+- **Reference:** Relative paths in HTML/CSS, e.g. `src="images/…"`, `href="images/…"`.
+- **Optimization:** None automated. Images are used as-is (PNG, JPG, SVG).
+- **CDN:** Only for third-party: Google Fonts, Bootstrap Icons (see Icons).
+
+**Rule:** New assets from Figma (exports, screenshots) should be placed in `images/` (or `videos/` for video) and referenced with relative paths from the HTML file (e.g. `images/` for pages in repo root).
+
+### 1.5 Icon System
+
+- **Source:** Bootstrap Icons, loaded via CDN in `<head>`:
+  - `https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css`
+- **Usage:** `<i class="bi bi-<name>"></i>` (e.g. `bi bi-arrow-right`).
+- **Naming:** Bootstrap Icons naming: `bi bi-<icon-name>`.
+
+**Rule:** Do not add new icon libraries. Use Bootstrap Icons only; if Figma uses a different icon, pick the closest Bootstrap Icon or use an SVG in `images/`.
+
+### 1.6 Styling Approach
+
+- **Methodology:** Global CSS in one file, `styles.css`, with logical comment sections (reset, layout, case study, Gallup overrides, homepage, shared components, responsive).
+- **Global styles:** Yes. Reset and base in `styles.css`; all pages share it via `<link rel="stylesheet" href="styles.css">`.
+- **Responsive:**  
+  - `@media (max-width: 768px)` for mobile (stack columns, full-width main, single-column project content, etc.).  
+  - `@media (min-width: 800px)` for hero layout on index.  
+  - Use the same breakpoints and patterns (e.g. `.row` → column on small screens) for new layout from Figma.
+
+**Rule:** Implement new UI with **classes in `styles.css`** (or minimal inline style only where necessary). Prefer extending existing classes (e.g. new modifiers) over one-off inline styles.
+
+### 1.7 Project Structure
+
+- **Root:** HTML pages at repo root: `index.html`, `gallup.html`, `muse.html`, `myQuilt.html`, `playground.html`, `vennDiagrams.html`, `ai-logo.html`, `slime.html`, `diagrams.html`, etc.
+- **Shared:** `styles.css`, `castleScript.js` (and other script files where used).
+- **Assets:** `images/`, `videos/`.
+- **Pattern:** Each “feature” is typically one HTML page; shared header/footer and nav are repeated in each file. No templates or partials.
+
+**Rule:** New pages from Figma should be new HTML files at root (or in a subfolder if you introduce one), each linking to `styles.css` and reusing the same `<header>` / nav pattern as existing pages.
+
+---
+
+## 2. Figma MCP Integration Rules
+
+These rules define how to translate Figma inputs into code for this project. Follow them for every Figma-driven change.
+
+### 2.1 Required flow (do not skip)
+
+1. Run **get_design_context** for the exact node(s) you are implementing.
+2. If the response is too large or truncated, run **get_metadata** to get a high-level node map, then run **get_design_context** again for only the needed node(s).
+3. Run **get_screenshot** for a visual reference of the node variant being implemented.
+4. Only after you have both **get_design_context** and **get_screenshot**, download any assets needed (into `images/` or `videos/`) and start implementation.
+5. Translate the design into **this project’s conventions**: static HTML, classes from `styles.css`, palette and typography from the analysis above.
+6. Validate against the Figma screenshot for 1:1 look and behavior before marking complete.
+
+### 2.2 Implementation rules
+
+- Treat Figma MCP output (e.g. React + Tailwind) as **design and behavior reference**, not as the target tech stack. Output must be **HTML + CSS** using this repo’s patterns.
+- **Do not** introduce Tailwind or React. Use only `styles.css` and, if needed, small amounts of vanilla JS.
+- Reuse existing layout and component classes (see 1.2) instead of duplicating structure or inventing new naming.
+- Use the project’s **color palette** (see 1.1) when matching Figma colors. Map Figma tokens/solid colors to the hex values listed there.
+- **Typography:** Keep existing font stack: `'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif` for body; `'Teko'` for some labels; `'Futura', 'Futura-Medium', …` for site name in header. Match sizes and weights to existing classes (e.g. `.bigger`, `.small`, `.case-block-label`).
+- Preserve existing **routing and navigation**: same header with “work”, “about”, “playground” links; same `index.html#work` / `index.html#about` pattern on inner pages.
+- Aim for **1:1 visual parity** with the Figma design and validate the final UI against the Figma screenshot.
+
+### 2.3 Asset handling
+
+- If the Figma MCP server returns a **localhost source** for an image or SVG, use that source to **download** the asset and then save it under `images/` (or `videos/` for video). Reference it in HTML/CSS via relative path (e.g. `images/exported-hero.png`).
+- **Do not** add or rely on new icon packages. Use **Bootstrap Icons** (already in use) or SVGs in `images/`.
+- **Do not** use or create placeholder images if a localhost/export URL is provided; use the actual asset.
+- Store all new image/SVG/video assets in `images/` or `videos/` and reference them with relative paths from the page (e.g. `images/…` for pages at root).
+
+### 2.4 Page and file conventions
+
+- New pages: add new **HTML file(s)** at repo root (or agreed subfolder). Reuse the same `<head>` pattern: viewport, favicon, Google Fonts, Bootstrap Icons, `styles.css`.
+- Copy the **header + nav** block from `index.html` or `gallup.html` so navigation and branding stay consistent.
+- Main content: use **semantic structure** (`<main>`, `<section>`, `<article>`, `<header>`, `<nav>`) and the existing class names for layout and blocks.
+- Buttons: use **`.button-24`** for primary CTAs; pair with `<a>` or `<button>` as appropriate. Use Bootstrap Icons inside if the design shows an arrow or icon (e.g. `<i class="bi bi-arrow-right"></i>`).
+
+### 2.5 Responsive behavior
+
+- Add or extend styles in `styles.css` under the existing **`@media (max-width: 768px)`** block (and optionally `min-width: 800px` where relevant) so new layout stacks and resizes like the rest of the site.
+- Reuse patterns such as: `.row` → `flex-direction: column`, `.project-content` → single column, full-width images and videos.
+
+---
+
+## 3. Quick reference
+
+| Need | Use |
+|------|-----|
+| Colors | Palette in section 1.1 (e.g. `#ee3062`, `#FAF9F6`, `#333`) |
+| Buttons | Class `.button-24` |
+| Layout | `.row`, `.column`, `.header-container`, `.portfolio`, `.project`, `.project-content` |
+| Case study | `.details`, `.case-block`, `.case-block-label`, `.details-section`, `.details-graphs` |
+| Icons | Bootstrap Icons: `<i class="bi bi-*"></i>` |
+| Assets | `images/` or `videos/`, relative paths |
+| New CSS | Add to `styles.css` following existing section comments and naming |
+
+Implementing Figma designs with these rules will keep the portfolio consistent and maintainable.
