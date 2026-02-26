@@ -312,6 +312,10 @@ img {
     margin-bottom: 4rem;
 }
 
+.about-page .row {
+    flex-direction: column;
+}
+
 .details .row .column p {
     margin-bottom: 0;
 }
@@ -412,6 +416,15 @@ img {
     font-weight: 600;
     margin: 0 0 1.5rem 0;
     line-height: 1.2;
+    text-align: left;
+}
+
+.details.gallup-case-study .case-block h2,
+.details.gallup-case-study .details-section h2,
+.details.gallup-case-study .case-block h3,
+.details.gallup-case-study .details-section h3,
+.details.gallup-case-study .graph-item-copy h3 {
+    text-align: left;
 }
 
 .details.gallup-case-study .case-block-label {
